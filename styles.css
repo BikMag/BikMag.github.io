@@ -1,0 +1,237 @@
+/* Задаём новый шрифт */
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'),
+    url(/fonts/Lobster-Regular.ttf);
+}
+
+/* Свойства всего сайта */
+body {
+    background-color: #daf5ff;
+    margin: 0;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster';
+}
+
+#first, #Title1, #Title2, #form {
+    border-top: 110px solid transparent;
+    margin-top: -110px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+h2 {
+    color: #0154da;
+}
+
+h3 {
+    color: #00a2ff;
+}
+
+/* Шапка */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#top {
+    background-color: #0062ff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#top > * {
+    display: inline;
+    vertical-align: middle;
+}
+
+#top > h1 {
+    color: aliceblue;
+}
+
+#logo {
+    margin: 5px;
+}
+
+.contents {
+    width: 100%;
+    background-color: #0091ff;
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+.contents ul {
+    margin: 0px;
+}
+
+.contents  li {
+    display: inline;
+    padding-inline: 10px;
+    padding-top: 10px;
+}
+
+.contents li:hover {
+    background-color: #00a2ff;
+}
+
+.contents li:active {
+    background-color: #29adfa;
+}
+
+header nav a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/* Основа */
+main {
+    margin-inline: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+main section {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e3e3e3;
+    border-radius: 20px;
+}
+
+main article {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+main nav {
+    margin-inline: 10px;
+    text-align: center;
+}
+
+main nav a {
+    padding: 4px;
+    border: solid 2px;
+    border-radius: 10px;
+    background-color: #b0ffff;
+    text-decoration: none;
+    color: #0154da;
+    font-family: 'Lobster'
+}
+
+main nav a:hover {
+    background-color: #96ffff;
+}
+
+main nav a:active {
+    background-color: #a8a8a8;
+}
+
+/* Дизайн форм */
+#form h3 {
+    margin: 5px;
+}
+
+form > * {
+    border: solid 2px #0154da;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form * :focus {
+    background-color: #7bfd7b;
+}
+
+form * ::placeholder {
+    font-family: 'Lobster';
+    color: #76abff;
+}
+
+select, textarea, form input {
+    border: solid 2px;
+    border-radius: 5px;
+}
+
+/* Блок с неважной информацией */
+aside {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+aside > p {
+    margin: 0px;
+}
+
+#kolyma {
+    float: left;
+    border: solid black;
+    border-radius: 7px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    background-color: #76cdff ;
+    text-align: center;
+}
+
+#kolyma img {
+    padding: 5px 5px 0px 5px;
+}
+
+blockquote {
+    background-color:  #0cdf0c;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0.5cm;
+    top: 18.4cm;
+}
+
+/* Подвал */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0062ff;
+    text-align: center;
+}
+
+footer * {
+    margin: 0;
+    color: aliceblue;
+}
+
+footer a {
+    color: aqua;
+}
+
+footer a:visited {
+    color: #bfbfbf;
+}
+
+p ~ address {
+    display:inline-flex;
+}
+
+address * {
+    margin-inline: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#contacts {
+    background-color: #0154da;
+    padding-bottom: 2px;
+}
+
+
+
