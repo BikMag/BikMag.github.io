@@ -44,11 +44,13 @@ header {
     width: 100%;
 
     background-color: #0062ff;
+
+    z-index: 1;
 }
 
 #logo {
     min-width: 200px;
-    padding: 8px 4px 8px;
+    padding: 8px 10px 8px;
     background-color: #0062ff;
 }
 
@@ -167,6 +169,7 @@ main section {
     margin: 10px;
     background-color: #e3e3e3;
     border-radius: 20px;
+    border: solid black 2px;
 }
 
 main article {
@@ -199,6 +202,53 @@ main nav a:active {
     background-color: #a8a8a8;
 }
 
+.video, #map {
+    margin-inline: 0;
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Галерея */
+#galery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#galery article {
+    background-color: white;
+    border: solid 1px;
+    padding-bottom: 0;
+}
+
+#galery article:hover {
+    transform: rotate(-5deg) scale(0.95);
+}
+
+#galery article:active {
+    transform: scale(0.95);
+}
+
+#galery figure {
+    margin: 5px;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Lobster';
+}
+
+#galery img {
+    max-width: 100%;
+}
+
+#galery h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 /* Дизайн форм */
 #formblock h3 {
     margin: 5px;
@@ -225,6 +275,11 @@ select, textarea, form input {
     border-radius: 5px;
 }
 
+#about {
+    width: 97%;
+    resize: none;
+}
+
 /* Блок с неважной информацией */
 aside {
     width: 220px;
@@ -247,10 +302,12 @@ aside > p {
     margin-right: 10px;
     background-color: #76cdff ;
     text-align: center;
+    max-width: 420px;
 }
 
 #kolyma img {
     padding: 5px 5px 0px 5px;
+    max-width: 95%;
 }
 
 blockquote {

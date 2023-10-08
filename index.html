@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.ico" sizes="any"> <!-- Создание иконки -->
     <link rel="icon" type="images/png" href="/logo.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 800px)">
+    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 800px), (orientation: portrait)">
 
 </head>
 <body>
@@ -28,7 +28,9 @@
                 </li>
                 <li><a href="#Title2">Всё о реках</a>
                 </li>
-                <li><a href="#Title3">Отправить форму</a>
+                <li><a href="#Title3">Реки</a>
+                </li>
+                <li><a href="#Title4">Отправить форму</a>
                 </li>
                 <li><a href="#contacts">Контактная информация</a>
                 </li>
@@ -100,20 +102,20 @@
                         Реки вдохновляли поэтов на написание стихотворений. Так, Тютчев Ф.И. писал о реке:
                     </p>
                     <pre>
-                        В небе тают облака,
-                        И, лучистая на зное,
-                        В искрах катится <b>река</b>,
-                        Словно зеркало стальное…
-                        
-                        Час от часу жар сильней,
-                        Тень ушла к немым дубровам,
-                        И с белеющих полей
-                        Веет запахом медовым.
-                        
-                        Чудный день! Пройдут века —
-                        Так же будут, в вечном строе,
-                        Течь и искриться <b>река</b>
-                        И поля дышать на зное.
+В небе тают облака,
+И, лучистая на зное,
+В искрах катится <b>река</b>,
+Словно зеркало стальное…
+
+Час от часу жар сильней,
+Тень ушла к немым дубровам,
+И с белеющих полей
+Веет запахом медовым.
+
+Чудный день! Пройдут века —
+Так же будут, в вечном строе,
+Течь и искриться <b>река</b>
+И поля дышать на зное.
                     </pre>
                 </article>
 
@@ -140,11 +142,11 @@
                     </dl>
 
                     <!-- Каркас для карты изображения (при нажатии на одну из фигур страница перематывается наверх) -->
-                    <figure> <!-- Само фото, в которую встраивается карта -->
+                    <figure id="map"> <!-- Само фото, в которую встраивается карта -->
                         <!--img src="images/map.png" width="400" height="300" usemap="#map0"-->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14376.983751001073!2d37.4710501580796!3d55.67399529931266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695712666840!5m2!1sru!2sru"
-                                width="400"
-                                height="250"
+                                width="540"
+                                height="320"
                                 style="border:0;"
                                 allowfullscreen=""
                                 loading="lazy"
@@ -153,8 +155,8 @@
                         <figcaption>Карта</figcaption>
                     </figure>
 
-                    <figure>
-                        <iframe width="480"
+                    <figure class="video">
+                        <iframe width="540"
                                 height="300"
                                 src="https://www.youtube.com/embed/NHRuFmwqrak?si=zuilmdH67yt7Lxjm"
                                 title="YouTube video player"
@@ -167,8 +169,42 @@
                 </article>
             </section>
 
+            <section id="galery">
+                <h2 id="Title3" class="anchor">Посетите реки!</h2>
+                <article>
+                    <figure id="Don">
+                        <img src="images/Don.jpg" width="400" height="300">
+                        <figcaption>Река Дон (Россия)</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure id="Volga">
+                        <img src="images/Volga.jpg" width="400" height="300">
+                        <figcaption>Река Волга (Россия)</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure id="Khuankhe">
+                        <img src="images/KhuanKhe.jpg" width="400" height="300">
+                        <figcaption>Река Хуанхэ (Китай)</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure id="Amazonka">
+                        <img src="images/Amazonka.jpg" width="400" height="300">
+                        <figcaption>Река Амазонка (Бразилия)</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure id="Missisipi">
+                        <img src="images/Missisipi.jpg" width="400" height="300">
+                        <figcaption>Река Миссисипи (США)</figcaption>
+                    </figure>
+                </article>
+            </section>
+
             <section id="formblock">
-                <h2 id="Title3" class="anchor">Отправить форму</h2>
+                <h2 id="Title4" class="anchor">Отправить форму</h2>
                 <article>
                     <h3>Ввод персональных данных</h3>
                     <form action="" method="get">
@@ -221,7 +257,7 @@
                         </p>
                         <p>
                             <label for="about">Расскажите о себе</label><br>
-                            <textarea name="about" id="about" rows="6" cols="60" placeholder="Напр. Я люблю верстать сайтики :)"
+                            <textarea name="about" id="about" rows="6" placeholder="Напр. Я люблю верстать сайтики :)"
                                     maxlength="128"
                                     minlength="10"
                                     required></textarea> 

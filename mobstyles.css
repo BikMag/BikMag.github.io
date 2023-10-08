@@ -75,3 +75,25 @@ main {
 main .content, aside {
     width: 100%;
 }
+
+#kolyma {
+    float: none;
+    margin: 0 auto;
+}
+
+/* Галерея */
+#galery article:hover {
+    transform: none;
+}
+
+#galery article:active {
+    transform: rotate(-5deg) scale(0.95);
+}
+
+
+@media (max-width: 945px) {
+    #galery img {
+        width: 220px;
+        height: 150px;;
+    }
+}
