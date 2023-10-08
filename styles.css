@@ -7,7 +7,7 @@
 
 /* Свойства всего сайта */
 body {
-    background-color: #daf5ff;
+    background-color: #b4ffb6;
     margin: 0;
     /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -42,6 +42,8 @@ header {
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
+
+    background-color: #0062ff;
 }
 
 #logo {
@@ -61,7 +63,7 @@ header {
 
 #menu {
     flex-grow: 1;
-    background-color: #0091ff;
+    /* background-color: #0091ff; */
 }
 
 #menu ul {
@@ -95,6 +97,54 @@ header a {
     padding-bottom: 22px;
     color: antiquewhite;
 }
+
+/* Кнопка  */
+header input {
+    position: absolute;
+    opacity: 0;
+    right: -50px;
+    z-index: 1;
+}
+
+.nav-toggle {
+    visibility: hidden;
+    max-width: 0;
+    position: relative;
+
+    width: 40px;
+}
+
+.nav-toggle span {
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 8px;
+    right: 8px;
+    height: 3px;
+    background: white;
+
+    border-radius: 6px;
+ }
+
+ .nav-toggle span:before, .nav-toggle span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+
+    border-radius: 6px;
+ }
+
+ .nav-toggle span:before {
+    top: -10px;
+ }
+ 
+ .nav-toggle span:after {
+    bottom: -10px;
+ }
 
 /* Основа */
 main {
@@ -133,7 +183,7 @@ main nav {
 
 main nav a {
     padding: 4px;
-    border: solid 2px;
+    /* border: solid 2px; */
     border-radius: 10px;
     background-color: #b0ffff;
     text-decoration: none;
@@ -177,7 +227,7 @@ select, textarea, form input {
 
 /* Блок с неважной информацией */
 aside {
-    width: 250px;
+    width: 220px;
     flex-grow: 1;
 
     text-align: center;
