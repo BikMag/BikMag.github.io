@@ -17,7 +17,8 @@ h1, h2, h3 {
     font-family: 'Lobster';
 }
 
-#first, #Title1, #Title2, #form {
+/* Смещение якоря */
+.anchor {
     border-top: 110px solid transparent;
     margin-top: -110px;
     -moz-background-clip: padding;
@@ -35,67 +36,80 @@ h3 {
 
 /* Шапка */
 header {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     width: 100%;
-    margin: 0 auto;
-    z-index: 1;
 }
 
-#top {
+#logo {
+    min-width: 200px;
+    padding: 8px 4px 8px;
     background-color: #0062ff;
-    text-align: center;
-    padding-bottom: 10px;
 }
 
-#top > * {
+#logo > * {
     display: inline;
     vertical-align: middle;
 }
 
-#top > h1 {
+#logo > h1 {
     color: aliceblue;
 }
 
-#logo {
-    margin: 5px;
-}
-
-.contents {
-    width: 100%;
+#menu {
+    flex-grow: 1;
     background-color: #0091ff;
-    text-decoration: underline;
-    text-decoration-color: whitesmoke;
 }
 
-.contents ul {
+#menu ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     margin: 0px;
+    padding-left: 0px;
 }
 
-.contents  li {
-    display: inline;
-    padding-inline: 10px;
-    padding-top: 10px;
+#menu li {
+    flex-grow: 1;
+    list-style: none;
+    text-align: center;
 }
 
-.contents li:hover {
+#menu li:hover {
     background-color: #00a2ff;
 }
 
-.contents li:active {
+#menu li:active {
     background-color: #29adfa;
 }
 
-header nav a {
-    color: antiquewhite;
+header a {
+    display: block;
     text-decoration: none;
+    
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: antiquewhite;
 }
 
 /* Основа */
 main {
-    margin-inline: 15px;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 70px;
+}
+
+main .content {
+    width: 70%;
+    flex-grow: 1;
 }
 
 main section {
@@ -136,7 +150,7 @@ main nav a:active {
 }
 
 /* Дизайн форм */
-#form h3 {
+#formblock h3 {
     margin: 5px;
 }
 
@@ -163,8 +177,9 @@ select, textarea, form input {
 
 /* Блок с неважной информацией */
 aside {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 250px;
+    flex-grow: 1;
+
     text-align: center;
     background-color: antiquewhite;
 }
@@ -192,15 +207,11 @@ blockquote {
     background-color:  #0cdf0c;
     padding: 5px;
     border-radius: 5px;
-    position: absolute;
-    right: 0.5cm;
-    top: 18.4cm;
 }
 
 /* Подвал */
 footer {
     width: 100%;
-    margin: 0 auto;
     background-color: #0062ff;
     text-align: center;
 }

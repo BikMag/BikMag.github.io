@@ -12,13 +12,13 @@
 <body>
     <!-- Шапка -->
     <header>
-        <div id="top">
-            <img id="logo" src="images/river_logo.png" width="50" height="50">
+        <div id="logo">
+            <img src="images/river_logo.png" width="50" height="50">
             <h1>Реки мира</h1>
         </div>
 
         <!-- Создание оглавления на основе списков -->
-        <nav class="contents">
+        <nav id="menu">
             <ul>
                 <li><a href="#Title1">О проекте</a> <!-- Каждый пункт ссылается на нужный подзаголовок -->
                 </li>
@@ -33,245 +33,245 @@
     </header>
     
     <!-- Основная часть страницы -->
-    <main id="first">
-        <section>
-            <h2 id="Title1">О проекте</h2>
+    <main>
+        <div class="content">
+            <section>
+                <h2 id="Title1" class="anchor">О проекте</h2>
 
-            <article>
-                <h3 id="Subtitle1.1">Что это</h3>
-                <p><i>"Реки мира"</i> - это проект об <strong>интересных</strong> фактах речной акватории Земли.
-                    <br>Здесь можно узнать о реках-рекордсменах со всей планеты.</p>
-            </article>
-           
-            <article>
-                <h3 id="Subtitle1.2">Для чего нужен</h3>
-                <p>Данный <em>проект</em> является курсовой работой для <abbr>РТУ МИРЭА</abbr>.</p>
-            </article>
+                <article>
+                    <h3 id="Subtitle1.1">Что это</h3>
+                    <p><i>"Реки мира"</i> - это проект об <strong>интересных</strong> фактах речной акватории Земли.
+                        <br>Здесь можно узнать о реках-рекордсменах со всей планеты.</p>
+                </article>
+            
+                <article>
+                    <h3 id="Subtitle1.2">Для чего нужен</h3>
+                    <p>Данный <em>проект</em> является курсовой работой для <abbr>РТУ МИРЭА</abbr>.</p>
+                </article>
 
-            <article>
-                <h3 id="Subtitle1.3">Перспективы</h3>
-                <p>В будущем <em>проект</em> может перерасти в полноценный туристический портал или энциклопедию.</p>
-            </article>
-        </section>
-        
-        <section>
-            <h2 id="Title2">Всё о реках</h2>
-            <!-- Циатата -->
-            <blockquote><i>"Все реки являются матерями моря."</i></blockquote>
+                <article>
+                    <h3 id="Subtitle1.3">Перспективы</h3>
+                    <p>В будущем <em>проект</em> может перерасти в полноценный туристический портал или энциклопедию.</p>
+                </article>
+            </section>
+            
+            <section>
+                <h2 id="Title2" class="anchor">Всё о реках</h2>
+                <!-- Циатата -->
+                <blockquote><i>"Все реки являются матерями моря."</i></blockquote>
 
-            <article>
-                <h3 id="Subtitle2.1">Роль рек в нашей жизни</h3>
+                <article>
+                    <h3 id="Subtitle2.1">Роль рек в нашей жизни</h3>
+                    
+                    <!-- Фото-ссылка на другой сайт (обёрнут тегом figure для открытия страницы в новой вкладке) -->
+                    <figure id="kolyma">
+                        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8B%D0%BC%D0%B0" target="_blank">
+                            <img src="images/river.jpg" width="400" height="240">
+                        </a>
+                        <figcaption>Река Колыма</figcaption>
+                    </figure>
+
+                    <p>Реки - это источник <u>воды</u> (H<sub>2</sub>O) и <u>пищи</u>.
+                        Практически все поселения строились вблизи рек<sup>уточнить</sup>.
+                        <br>
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text 
+                        Text Text Text Text Text Text Text Text Text Text Text Text
+                        <br> 
+                        Реки вдохновляли поэтов на написание стихотворений. Так, Тютчев Ф.И. писал о реке:
+                    </p>
+                    <pre>
+                        В небе тают облака,
+                        И, лучистая на зное,
+                        В искрах катится <b>река</b>,
+                        Словно зеркало стальное…
+                        
+                        Час от часу жар сильней,
+                        Тень ушла к немым дубровам,
+                        И с белеющих полей
+                        Веет запахом медовым.
+                        
+                        Чудный день! Пройдут века —
+                        Так же будут, в вечном строе,
+                        Течь и искриться <b>река</b>
+                        И поля дышать на зное.
+                    </pre>
+                </article>
+
+                <!-- Список описаний -->
+                <article>
+                    <h3 id="Subtitle2.2">Определения:</h3>
+                    <dl>
+                        <dt><b>Река</b></dt>
+                        <dd>Поток воды, имеющий лентообразную форму.</dd>
+                        <dd>Разновидность водоёма.</dd>
+
+                        <dt><b>Исток реки</b></dt>
+                        <dd>Участок, где река берёт своё начало.</dd>
+
+                        <dt><b>Устье реки</b></dt>
+                        <dd>Та часть реки, где она заканчивается и впадает в другую реку, озеро, море.</dd>
+                        <dd>Конец реки.</dd>
+
+                        <dt><b>Бассейн реки</b></dt>
+                        <dd>Площадь земной поверхности, по которой протекает главная река со всеми её притоками.</dd>
+
+                        <dt><b>Водораздел</b></dt>
+                        <dd>Линия, ограничивающая бассейн реки.</dd>
+                    </dl>
+
+                    <!-- Каркас для карты изображения (при нажатии на одну из фигур страница перематывается наверх) -->
+                    <figure> <!-- Само фото, в которую встраивается карта -->
+                        <!--img src="images/map.png" width="400" height="300" usemap="#map0"-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14376.983751001073!2d37.4710501580796!3d55.67399529931266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695712666840!5m2!1sru!2sru"
+                                width="400"
+                                height="250"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <figcaption>Карта</figcaption>
+                    </figure>
+
+                    <figure>
+                        <iframe width="480"
+                                height="300"
+                                src="https://www.youtube.com/embed/NHRuFmwqrak?si=zuilmdH67yt7Lxjm"
+                                title="YouTube video player"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                        </iframe>
+                        <figcaption>Видео</figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section id="formblock">
+                <h2 id="Title3" class="anchor">Отправить форму</h2>
+                <article>
+                    <h3>Ввод персональных данных</h3>
+                    <form action="" method="get">
+                        <p>
+                            <label for="name">Ввеедите имя:</label>
+                            <input type="text" name="name" id="name" maxlength="12" minlength="3" placeholder="Имя Фамилия" required>
+                        </p>
+                        <fieldset>
+                            <legend>Ваш пол:</legend>
+                            <label>
+                                <input type="radio" name="gender" id="male" value="m" checked>
+                                Мужской
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" id="female" value="f">
+                                Женский
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Рассылка:</legend>
+                            <label>
+                                <input type="checkbox" name="media" id="Telegram" checked>
+                                Telegram
+                            </label>
+                            <label>
+                                <input type="checkbox" name="media" id="WhatsApp">
+                                WhatsApp
+                            </label>
+                            <label>
+                                <input type="checkbox" name="media" id="VK">
+                                VK
+                            </label>
+                        </fieldset>
+                        <p>
+                            <label for="email">Введите email:</label>
+                            <input type="email" name="email" id="email" placeholder="example@mail.ru" required>
+                        </p>
+                        <p>
+                            <label for="city">Ваш(и) любимый(-ые) город(а):</label><br>
+                            <select name="city" id="city-select" multiple size="6" required>
+                                <option value="Moscow">Москва</option>
+                                <option value="Petersburg">Санкт-Петербург</option>
+                                <option value="Novosibirsk">Новосибирск</option>
+                                <option value="Ekaterinburg">Екатеринбург</option>
+                                <option value="Kazan">Казань</option>
+                                <option value="Vladivostok">Владивосток</option>
+                                <option value="Yakutsk">Якутск</option>
+                                <option value="Magadan">Магадан</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="about">Расскажите о себе</label><br>
+                            <textarea name="about" id="about" rows="6" cols="60" placeholder="Напр. Я люблю верстать сайтики :)"
+                                    maxlength="128"
+                                    minlength="10"
+                                    required></textarea> 
+                        </p>
+                        <p>
+                            <label for="date">Дата отпарвления:</label>
+                            <input type="datetime-local" name="date" id="date" min="1970-01-01T00:00" max="2030-01-01T00:00" required>
+                        </p>
+                        <button type="submit">Отправить данные</button>
+                    </form>
+                </article>
                 
-                <!-- Фото-ссылка на другой сайт (обёрнут тегом figure для открытия страницы в новой вкладке) -->
-                <figure id="kolyma">
-                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8B%D0%BC%D0%B0" target="_blank">
-                        <img src="images/river.jpg" width="400" height="240">
-                    </a>
-                    <figcaption>Река Колыма</figcaption>
-                </figure>
+                <article>
+                    <h3>Вход с паролем</h3>
+                    <form action="" method="get">
+                        <p>
+                            <label for="phone">Номер телефона (начинать с +7):</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+7998001234" required pattern="[+][7][0-9]{10}">
+                        </p>
+                        <p>
+                            <label for="password">Пароль:</label>
+                            <input type="password" name="password" id="password" placeholder="password" minlength="8" required>
+                        </p>
+                        <button type="submit">Отправить данные</button>
+                        <!--label><input type="checkbox" name="save">Сохранить</label-->
+                    </form>
+                </article>
+                
+                <article>
+                    <h3>Отправить файл</h3>
+                    <form action="" method="get">
+                        <p>
+                            <label for="file">Вставьте файл:</label>
+                            <input type="file" name="file" id="file" required>
+                        </p>
+                        <input type="submit" name="submit" id="submit">  
+                    </form>
+                </article>
+                
+            </section>
 
-                <p>Реки - это источник <u>воды</u> (H<sub>2</sub>O) и <u>пищи</u>.
-                    Практически все поселения строились вблизи рек<sup>уточнить</sup>.
-                    <br>
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text 
-                    Text Text Text Text Text Text Text Text Text Text Text Text
-                    <br> 
-                    Реки вдохновляли поэтов на написание стихотворений. Так, Тютчев Ф.И. писал о реке:
-                </p>
-                <pre>
-                    В небе тают облака,
-                    И, лучистая на зное,
-                    В искрах катится <b>река</b>,
-                    Словно зеркало стальное…
-                    
-                    Час от часу жар сильней,
-                    Тень ушла к немым дубровам,
-                    И с белеющих полей
-                    Веет запахом медовым.
-                    
-                    Чудный день! Пройдут века —
-                    Так же будут, в вечном строе,
-                    Течь и искриться <b>река</b>
-                    И поля дышать на зное.
-                </pre>
-            </article>
+            <!-- Возврат в начало страницы -->
+            <!-- <nav> 
+                <a href="#first"><b>Вернуться в начало</b></a> 
+            </nav> -->
+        </div>
 
-            <!-- Список описаний -->
-            <article>
-                <h3 id="Subtitle2.2">Определения:</h3>
-                <dl>
-                    <dt><b>Река</b></dt>
-                    <dd>Поток воды, имеющий лентообразную форму.</dd>
-                    <dd>Разновидность водоёма.</dd>
-
-                    <dt><b>Исток реки</b></dt>
-                    <dd>Участок, где река берёт своё начало.</dd>
-
-                    <dt><b>Устье реки</b></dt>
-                    <dd>Та часть реки, где она заканчивается и впадает в другую реку, озеро, море.</dd>
-                    <dd>Конец реки.</dd>
-
-                    <dt><b>Бассейн реки</b></dt>
-                    <dd>Площадь земной поверхности, по которой протекает главная река со всеми её притоками.</dd>
-
-                    <dt><b>Водораздел</b></dt>
-                    <dd>Линия, ограничивающая бассейн реки.</dd>
-                </dl>
-
-                <!-- Каркас для карты изображения (при нажатии на одну из фигур страница перематывается наверх) -->
-                <figure> <!-- Само фото, в которую встраивается карта -->
-                    <!--img src="images/map.png" width="400" height="300" usemap="#map0"-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14376.983751001073!2d37.4710501580796!3d55.67399529931266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695712666840!5m2!1sru!2sru"
-                            width="400"
-                            height="250"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <figcaption>Карта</figcaption>
-                </figure>
-
-                <figure>
-                    <iframe width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/NHRuFmwqrak?si=zuilmdH67yt7Lxjm"
-                            title="YouTube video player"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                    </iframe>
-                    <figcaption>Видео</figcaption>
-                </figure>
-
-                <map name="map0"> <!-- Карта с выделением областей изображения -->
-                    <area shape="rect" coords="0, 0, 100, 50" href="#Top">
-                    <area shape="circle" coords="375, 275, 25" href="#Top">
-                    <area shape="poly" coords="0, 245, 0, 300, 55, 300" href="#Top">
-                </map>
-            </article>
-        </section>
-
-        <section id="form">
-            <h2 id="Title3">Отправить форму</h2>
-            <article>
-                <h3>Ввод персональных данных</h3>
-                <form action="" method="get">
-                    <p>
-                        <label for="name">Ввеедите имя:</label>
-                        <input type="text" name="name" id="name" maxlength="12" minlength="3" placeholder="Имя Фамилия" required>
-                    </p>
-                    <fieldset>
-                        <legend>Ваш пол:</legend>
-                        <label>
-                            <input type="radio" name="gender" id="male" value="m" checked>
-                            Мужской
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" id="female" value="f">
-                            Женский
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Рассылка:</legend>
-                        <label>
-                            <input type="checkbox" name="media" id="Telegram" checked>
-                            Telegram
-                        </label>
-                        <label>
-                            <input type="checkbox" name="media" id="WhatsApp">
-                            WhatsApp
-                        </label>
-                        <label>
-                            <input type="checkbox" name="media" id="VK">
-                            VK
-                        </label>
-                    </fieldset>
-                    <p>
-                        <label for="email">Введите email:</label>
-                        <input type="email" name="email" id="email" placeholder="example@mail.ru" required>
-                    </p>
-                    <p>
-                        <label for="city">Ваш(и) любимый(-ые) город(а):</label><br>
-                        <select name="city" id="city-select" multiple size="6" required>
-                            <option value="Moscow">Москва</option>
-                            <option value="Petersburg">Санкт-Петербург</option>
-                            <option value="Novosibirsk">Новосибирск</option>
-                            <option value="Ekaterinburg">Екатеринбург</option>
-                            <option value="Kazan">Казань</option>
-                            <option value="Vladivostok">Владивосток</option>
-                            <option value="Yakutsk">Якутск</option>
-                            <option value="Magadan">Магадан</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="about">Расскажите о себе</label><br>
-                        <textarea name="about" id="about" rows="6" cols="60" placeholder="Напр. Я люблю верстать сайтики :)"
-                                  maxlength="128"
-                                  minlength="10"
-                                  required></textarea> 
-                    </p>
-                    <p>
-                        <label for="date">Дата отпарвления:</label>
-                        <input type="datetime-local" name="date" id="date" min="1970-01-01T00:00" max="2030-01-01T00:00" required>
-                    </p>
-                    <button type="submit">Отправить данные</button>
-                </form>
-            </article>
-            
-            <article>
-                <h3>Вход с паролем</h3>
-                <form action="" method="get">
-                    <p>
-                        <label for="phone">Номер телефона (начинать с +7):</label>
-                        <input type="tel" name="phone" id="phone" placeholder="+7998001234" required pattern="[+][7][0-9]{10}">
-                    </p>
-                    <p>
-                        <label for="password">Пароль:</label>
-                        <input type="password" name="password" id="password" placeholder="password" minlength="8" required>
-                    </p>
-                    <button type="submit">Отправить данные</button>
-                    <!--label><input type="checkbox" name="save">Сохранить</label-->
-                </form>
-            </article>
-            
-            <article>
-                <h3>Отправить файл</h3>
-                <form action="" method="get">
-                    <p>
-                        <label for="file">Вставьте файл:</label>
-                        <input type="file" name="file" id="file" required>
-                    </p>
-                    <input type="submit" name="submit" id="submit">  
-                </form>
-            </article>
-            
-        </section>
-
-        <nav> <!-- Возврат в начало страницы -->
-            <a href="#first"><b>Вернуться в начало</b></a> 
-        </nav>
+        <aside>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="images/river_logo.png" width="50" height="50">
+            </section>
+        </aside>
     </main>
-
-    <aside>
-        <p><i>Здесь могла бы быть ваша реклама</i></p>
-    </aside>
 
     <!-- Подвал -->
     <footer>
