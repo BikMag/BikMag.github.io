@@ -45,7 +45,7 @@ header {
 
     background-color: #0062ff;
 
-    z-index: 1;
+    z-index: 2;
 }
 
 #logo {
@@ -81,6 +81,9 @@ header {
     flex-grow: 1;
     list-style: none;
     text-align: center;
+    border-radius: 10px;
+
+    transition: background-color .5s;
 }
 
 #menu li:hover {
@@ -202,9 +205,44 @@ main nav a:active {
     background-color: #a8a8a8;
 }
 
-.video, #map {
+.videos, #map {
     margin-inline: 0;
     text-align: center;
+}
+
+#my_video {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #030022;
+}
+
+#my_video::before {
+    position: absolute;
+    bottom: 4px;
+    width: 300px;
+    height: 2em;
+    opacity: 0;
+    border: solid 1px white;
+    margin-inline: 20%;
+
+    background-color: #00000072;
+
+    content: "Река Дон. На рыбалке.";
+
+    color: white;
+    transition: opacity 300ms;
+}
+
+#my_video:hover::before {
+    opacity: 1;
+}
+
+#my_video::before::after {
+    content: "текст текст текст";
+    font-size: large;
 }
 
 iframe {
@@ -218,35 +256,117 @@ iframe {
     flex-wrap: wrap;
 }
 
-#galery article {
-    background-color: white;
-    border: solid 1px;
-    padding-bottom: 0;
-}
-
-#galery article:hover {
-    transform: rotate(-5deg) scale(0.95);
-}
-
-#galery article:active {
-    transform: scale(0.95);
-}
-
-#galery figure {
-    margin: 5px;
-    max-width: 100%;
-    text-align: center;
-    font-family: 'Lobster';
-}
-
-#galery img {
-    max-width: 100%;
-}
-
 #galery h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 5px;
+}
+
+#galery article {
+    background-color: white;
+    border: solid 1px;
+    padding-bottom: 0;
+
+    box-shadow: 3px 3px 5px black;
+}
+
+#galery article:hover {
+    /* transform: rotate(-5deg) scale(0.95); */
+}
+
+#galery article:active {
+    /* transform: scale(0.95); */
+}
+
+#galery figure {
+    position: relative;
+    margin: 5px;
+    max-width: 100%;
+    text-align: center;
+
+    cursor: zoom-in;
+}
+
+#galery img {
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+}
+
+#galery figcaption {
+    font-family: 'Lobster';
+    font-size: 18pt;
+}
+
+#galery p {
+    position: absolute;
+    font-size: 16pt;
+}
+
+/* Дон (анимация 1) */
+#Don, img {
+    transition: all 450ms;
+}
+
+#Don:hover {
+    background-color: deepskyblue;
+}
+
+#Don:hover img {
+    /* transition: transform 150ms; */
+    transform: translateY(-70%);
+}
+
+#Don p {
+    top: calc(30% - 10px);
+}
+
+/* Волга (анимация 2) */
+#Volga, p {
+    transition: all 450ms;
+}
+
+#Volga p {
+    display: block;
+    padding-top: 30%;
+    max-height: fit-content;
+    opacity: 0;
+
+    bottom: 14px;
+    z-index: 1;
+
+    background: linear-gradient(0deg, 
+                                #04ff00e5 0%,
+                                #04ff0098 55%,
+                                #00000000 100%);
+
+    
+}
+
+#Volga:hover {
+    background-color: #04ff00;
+}
+
+#Volga:hover p {
+    opacity: 1;
+}
+
+/* Хуанхэ (анимация 3) */
+#HuangHe, img {
+    transition: all 400ms;
+}
+
+#HuangHe:hover img {
+    transform-origin: 100% 0;
+    transform: rotateX(90deg);
+}
+
+#HuangHe:hover {
+    background-color: yellow;
+}
+
+#HuangHe p {
+    top: -5px;
 }
 
 /* Дизайн форм */
@@ -278,6 +398,20 @@ select, textarea, form input {
 #about {
     width: 97%;
     resize: none;
+}
+
+#formblock button {
+    background-color: #00a2ff;
+    color: white;
+    box-shadow: 0 6px gray;
+    transition: all .5s;
+}
+
+#formblock button:hover {
+    color: black;
+    background-color: #0cdfae;
+    box-shadow: 0 3px gray;
+    transform: translateY(3px);
 }
 
 /* Блок с неважной информацией */
@@ -314,6 +448,131 @@ blockquote {
     background-color:  #0cdf0c;
     padding: 5px;
     border-radius: 5px;
+}
+
+/* Блок уведомлений */
+#notification {
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    background: #0154da;
+    border: #002200 2px solid;
+    border-radius: 100%;
+    padding: 10px;
+    z-index: 1;
+
+    > ol {
+        visibility: hidden;
+        position: absolute;
+        bottom: -1000px;
+        right: -1000px;
+        list-style: none;
+        padding: 0;
+        counter-reset: notifications_count;
+
+        > li {
+            counter-increment: notifications_count;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background: #96ffff;
+            transition: all 400ms;
+            width: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+
+            > a {
+                text-align: center;
+                width: inherit;
+                position: relative;
+                bottom: 10px;
+                margin-left: 30px;
+            }
+
+
+            > a::before {
+                color: white;
+                content: counter(notifications_count);
+                position: relative;
+                top: 20px;
+                right: 30px;
+                background: #00a6c0;
+                text-align: center;
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 4px black;
+                padding: 2px;
+            }
+        }
+
+        > li:hover {
+            background: #00a6c0;
+            color: white;
+            /*border: #002200 1px solid;*/
+            box-shadow: 3px 3px 5px black;
+            transform: scale(1.1);
+
+            ::before {
+                background: #96ffff;
+                color: black;
+            }
+        }
+    }
+}
+
+@keyframes anim {
+    from {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    99% {
+        width: 330px;
+        height: 400px;
+        border-radius: 20px;
+    }
+    to {
+    }
+}
+
+#notification:hover {
+    animation-name: anim;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+
+    border-radius: 20px;
+
+    > ol {
+        visibility: visible;
+        position: static;
+    }
+}
+
+#notification_menu_sym::before {
+    content: "\1F514";
+    color: white;
+}
+
+#notification_menu_sym::after {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    content: "4";
+    border-radius: 50%;
+    border: #002200 2px solid;
+    background: red;
 }
 
 /* Подвал */

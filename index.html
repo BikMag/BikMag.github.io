@@ -155,7 +155,7 @@
                         <figcaption>Карта</figcaption>
                     </figure>
 
-                    <figure class="video">
+                    <figure class="videos">
                         <iframe width="540"
                                 height="300"
                                 src="https://www.youtube.com/embed/NHRuFmwqrak?si=zuilmdH67yt7Lxjm"
@@ -165,28 +165,43 @@
                                 allowfullscreen>
                         </iframe>
                         <figcaption>Видео</figcaption>
+                        <div id="my_video">
+                            <video width="70%" height="45%" src="videos/reka-don.mp4" class="content" autoplay="" muted="" loop=""></video>
+                        </div>
                     </figure>
                 </article>
             </section>
 
             <section id="galery">
                 <h2 id="Title3" class="anchor">Посетите реки!</h2>
-                <article>
-                    <figure id="Don">
+                <article id="Don">
+                    <figure>
                         <img src="images/Don.jpg" width="400" height="300">
                         <figcaption>Река Дон (Россия)</figcaption>
+                        <p>Живописная река, протекающая в Центральной и Южной России.
+                            Начинается в г. Новомосковск, Тульская обл., и впадает
+                            в азовское море у г. Ростов-на-Дону.
+                        </p>
                     </figure>
                 </article>
-                <article>
-                    <figure id="Volga">
+                <article id="Volga">
+                    <figure>
                         <img src="images/Volga.jpg" width="400" height="300">
                         <figcaption>Река Волга (Россия)</figcaption>
+                        <p> Самая протяженная река Центральной Росии. 
+                            Протянулась от Валдаской возвышенности до Каспийского моря. 
+                            Имеет самый большой бассейн в Европе.</p>
                     </figure>
                 </article>
-                <article>
-                    <figure id="Khuankhe">
-                        <img src="images/KhuanKhe.jpg" width="400" height="300">
+                <article id="HuangHe">
+                    <figure>
+                        <img src="images/HuangHe.jpg" width="400" height="300">
                         <figcaption>Река Хуанхэ (Китай)</figcaption>
+                        <p>Хуанхэ в переводе с китайского означает "Жёлтая река". 
+                            Из-за наносов река обретает желтоватый цвет. 
+                            Протекает от Тибета до Желтого моря.
+                            Бассейн реки считается местом формирования китайского этноса.
+                        </p>
                     </figure>
                 </article>
                 <article>
@@ -293,7 +308,8 @@
                             <label for="file">Вставьте файл:</label>
                             <input type="file" name="file" id="file" required>
                         </p>
-                        <input type="submit" name="submit" id="submit">  
+                        <!-- <input type="submit" name="submit" id="submit">  -->
+                        <button type="submit">Отправить данные</button> 
                     </form>
                 </article>
                 
@@ -303,6 +319,17 @@
             <!-- <nav> 
                 <a href="#first"><b>Вернуться в начало</b></a> 
             </nav> -->
+        </div>
+
+        <div id="notification">
+            <a id="notification_menu_sym"></a>
+            <ol>
+                <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
+                <li><a>Какие места стоит посетить</a></li>
+                <li><a>Открылся новый туристический маршрут!</a></li>
+                <li><a>Часто задаваемые вопросы</a></li>
+            </ol>
+            
         </div>
 
         <aside>

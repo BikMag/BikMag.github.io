@@ -23,6 +23,10 @@ header input {
     visibility: visible;
 }
 
+.nav-toggle > span {
+    transition: transform .6s ease-out;
+}
+
 /* Анимация при нажатии на кнопку */
 header input:checked ~ .nav-toggle > span
 {
@@ -36,7 +40,7 @@ header input:checked ~ .nav-toggle > span::before
   transform: rotate(-90deg) translate(-10px, -0.5px);
 }
 
-header input:checked ~ .nav-toggle > span::after
+header input:checked ~ .nav-toggle > span:after
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -44,18 +48,19 @@ header input:checked ~ .nav-toggle > span::after
 
 header input:checked ~ #menu
 {
-  max-height: inherit;
-  visibility: visible;
+    transform: none;
 }
 
 #menu {
-    max-height: 0;
+    width: 100%;
     position: absolute;
-    right: 0px;
-    top: 75px;
+    right: 0;
+    top: 65px;
 
-    visibility: hidden;
     background-color: #0091ff;
+
+    transform: translate(100%, 0);
+    transition: transform .7s ease-in-out;
 }
 
 #menu ul {
@@ -64,6 +69,10 @@ header input:checked ~ #menu
 
 #menu li {
     width: 100%;
+}
+
+#menu li:hover {
+    background-color: #5bb8ff;
 }
 
 /* Основной блок */
@@ -83,11 +92,19 @@ main .content, aside {
 
 /* Галерея */
 #galery article:hover {
-    transform: none;
+    /* transform: none; */
 }
 
 #galery article:active {
-    transform: rotate(-5deg) scale(0.95);
+    /* transform: rotate(-5deg) scale(0.95); */
+}
+
+#galery figcaption {
+    font-size: 14pt;
+}
+
+#galery p {
+    font-size: 10pt;
 }
 
 
