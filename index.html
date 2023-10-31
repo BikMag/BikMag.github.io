@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.ico" sizes="any"> <!-- Создание иконки -->
     <link rel="icon" type="images/png" href="/logo.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 800px), (orientation: portrait)">
+    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
     <!-- Добавить библиотеку иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -31,11 +31,9 @@
                 </li>
                 <li><a href="#Title3">Реки</a>
                 </li>
-                <li><a href="#Title4">Отправить форму</a>
-                </li>
                 <li><a href="#contacts">Контактная информация</a>
                 </li>
-                <li><a href="registration.html">Войти</a>
+                <li><a href="sign-in-pane.html">Войти</a>
                 </li>
             </ul>
         </nav>
@@ -169,7 +167,7 @@
                         </iframe>
                         <figcaption>Видео</figcaption>
                         <div id="my_video">
-                            <video width="70%" height="45%" src="videos/reka-don.mp4" class="content" autoplay="" muted="" loop=""></video>
+                            <video src="videos/reka-don.mp4" class="content" autoplay="" muted="" loop=""></video>
                         </div>
                     </figure>
                 </article>
@@ -177,46 +175,46 @@
 
             <section id="galery">
                 <h2 id="Title3" class="anchor">Посетите реки!</h2>
-                <article id="Don">
-                    <figure>
-                        <img src="images/Don.jpg" width="400" height="300">
-                        <figcaption>Река Дон (Россия)</figcaption>
+                <article class="pictures">
+                    <figure id="Don">
+                        <img src="images/Don_.jpg" width="400" height="300">
+                        <figcaption>Дон (Россия)</figcaption>
                         <p>Живописная река, протекающая в Центральной и Южной России.
                             Начинается в г. Новомосковск, Тульская обл., и впадает
                             в азовское море у г. Ростов-на-Дону.
                         </p>
                     </figure>
-                </article>
-                <article id="Volga">
-                    <figure>
-                        <img src="images/Volga.jpg" width="400" height="300">
-                        <figcaption>Река Волга (Россия)</figcaption>
+                    <figure id="Volga">
+                        <img src="images/Volga_.jpg" width="400" height="300">
+                        <figcaption>Волга (Россия)</figcaption>
                         <p> Самая протяженная река Центральной Росии. 
                             Протянулась от Валдаской возвышенности до Каспийского моря. 
                             Имеет самый большой бассейн в Европе.</p>
                     </figure>
-                </article>
-                <article id="HuangHe">
-                    <figure>
-                        <img src="images/HuangHe.jpg" width="400" height="300">
-                        <figcaption>Река Хуанхэ (Китай)</figcaption>
+                    <figure id="HuangHe">
+                        <img src="images/HuangHe_.jpg" width="400" height="300">
+                        <figcaption>Хуанхэ (Китай)</figcaption>
                         <p>Хуанхэ в переводе с китайского означает "Жёлтая река". 
                             Из-за наносов река обретает желтоватый цвет. 
                             Протекает от Тибета до Желтого моря.
                             Бассейн реки считается местом формирования китайского этноса.
                         </p>
                     </figure>
-                </article>
-                <article>
                     <figure id="Amazonka">
                         <img src="images/Amazonka.jpg" width="400" height="300">
-                        <figcaption>Река Амазонка (Бразилия)</figcaption>
+                        <figcaption>Амазонка (Бразилия)</figcaption>
                     </figure>
-                </article>
-                <article>
                     <figure id="Missisipi">
                         <img src="images/Missisipi.jpg" width="400" height="300">
-                        <figcaption>Река Миссисипи (США)</figcaption>
+                        <figcaption>Миссисипи (США)</figcaption>
+                    </figure>
+                    <figure id="Nil">
+                        <img src="images/Nil.jpg" width="400" height="300">
+                        <figcaption>Нил (Египет)</figcaption>
+                    </figure>
+                    <figure id="Ind">
+                        <img src="images/Ind.jpg" width="400" height="300">
+                        <figcaption>Инд (Индия)</figcaption>
                     </figure>
                 </article>
             </section>
@@ -293,7 +291,7 @@
                 </div>
             </section>
 
-            <section id="formblock">
+            <!-- <section id="formblock">
                 <h2 id="Title4" class="anchor">Отправить форму</h2>
                 <article>
                     <h3>Ввод персональных данных</h3>
@@ -372,7 +370,6 @@
                             <input type="password" name="password" id="password" placeholder="password" minlength="8" required>
                         </p>
                         <button type="submit">Отправить данные</button>
-                        <!--label><input type="checkbox" name="save">Сохранить</label-->
                     </form>
                 </article>
                 
@@ -383,12 +380,11 @@
                             <label for="file">Вставьте файл:</label>
                             <input type="file" name="file" id="file" required>
                         </p>
-                        <!-- <input type="submit" name="submit" id="submit">  -->
                         <button type="submit">Отправить данные</button> 
                     </form>
                 </article>
                 
-            </section>
+            </section> -->
 
             <!-- Возврат в начало страницы -->
             <!-- <nav> 
@@ -405,32 +401,82 @@
                 <li><a>Часто задаваемые вопросы</a></li>
             </ol>
         </div>
-
-        <aside>
-            <section>
-                <p><i>Здесь могла бы быть ваша реклама</i></p>
-                <img src="images/river_logo.png" width="50" height="50">
-            </section>
-        </aside>
     </main>
+
+    <aside>
+        <section>
+            <p><i>Здесь могла бы быть ваша реклама</i></p>
+            <img src="images/river_logo.png" width="50" height="50">
+        </section>
+    </aside>
 
     <!-- Подвал -->
     <footer>
-        <h2 id="contacts">Контактная информация</h2>
         <div class="shell">
-            <p>Ссылка на наш <a href="https://www.yandex.ru/">паблик</a> (там много инетересной информации)</p>
-            <address> <!-- Ссылки на сторонний сайт, почту и телефон -->
-                <a id="email" href="mailto:somepeople@mail.ru">Электронная почта</a><br>
-                <a href="tel:88005553535">Телефон</a>
-            </address>
-            <div id="social_media">
-                <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
-                <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
-                <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
-            </div>
+            <span class="about">
+                <h2 class="title">О нашем сайте</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                   sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                   suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                   Quis aute iure reprehenderit in voluptate velit esse cillum dolore
+                   eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                   sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div id="social_media">
+                    <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
+                    <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
+                    <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
+                </div>
+            </span>
+            
+            <span class="links">
+                <h2 class="title">Ссылки</h2>
+                <ul>
+                    <li><a href="#">О проекте</a>
+                    </li>
+                    <li><a href="#">FAQ</a>
+                    </li>
+                    <li><a href="#">Помощь</a>
+                    </li>
+                    <li><a href="#">Отправить форму</a>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </span>
+            
+            <span id="contacts">
+                <h2 class="title">Контакты</h2>
+                <!-- <address>
+                    <a id="email" href="mailto:somepeople@mail.ru">example@mail.ru</a><br>
+                    <a href="tel:+7 800 555-35-35">+7 800 555-35-35</a>
+                    <p>Ссылка на наш <a href="https://www.yandex.ru/">паблик</a></p>
+                </address> -->
+                <address>
+                    <div class="icon-block">
+                        <i class="fa fa-map-marker ico-contact"></i>
+                        <p class="description"> 128000, г. Москва, пр-кт Вернадского,
+                            дом 78, Кабинет А-108</p>
+                    </div>
+                
+                    <div class="icon-block">
+                        <i class="fa fa-envelope ico-contact"></i>
+                        <a class="description" id="email" href="mailto:example@mail.ru">example@mail.ru</a>
+                    </div>
+
+                    <div class="icon-block">
+                        <i class="fa fa-phone ico-contact"></i>
+                        <div class="tel-numbers">
+                            <a class="description" href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
+                            <a class="description" href="tel:+7 (900) 012-34-56">+7 (900) 012-34-56</a>
+                        </div>
+                    </div>
+                </address>
+            </span>
         </div>
         
-        <p><cite>2023 год</cite></p>       <!-- Сноска -->
+        <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
     </footer>
     
 </body>

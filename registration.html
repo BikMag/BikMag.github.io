@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реки мира</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
 </head>
 
 <body>
@@ -14,20 +15,52 @@
             <h1>Реки мира</h1>
     </header>
 
-    <main id="reg_block">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <form id="registration" action="" method="get">
+    <main id="reg-block">
+        <img id="bg-image" src="images/HuangHe.jpg">
+        
+        <form class="pane" action="" method="get">
+            <h2>Регистрация</h2>
 
-            <h2>Вход</h2>
-            <input type="email" name="email" id="email" placeholder="Почта" required>
-            <input type="password" name="password" id="password" placeholder="Пароль" minlength="8" required>
+            <div class="form-field">
+                <span>
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name" maxlength="12" minlength="2" placeholder="Иван" required>
+                </span>
+                <span>
+                    <label for="surname">Фамилия:</label>
+                    <input type="text" name="surname" id="surname" maxlength="12" minlength="3" placeholder="Иванов" required>
+                </span>
+                <span>
+                    <label for="email">Почта:</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.ru" required>
+                </span>
+                <span>
+                    <label for="tel">Телефон:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+79001234567" required pattern="[+][7][0-9]{10}">
+                </span>
+                
+                <fieldset>
+                    <legend>Ваш пол:</legend>
+                    <label>
+                        <input type="radio" name="gender" id="male" value="m" checked>
+                        Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="female" value="f">
+                        Женский
+                    </label>
+                </fieldset>
+    
+                <div class="about">
+                    <label for="about">Расскажите о себе</label>
+                    <textarea name="about" rows="4" placeholder="Напр. Я люблю верстать сайтики :)"
+                            maxlength="1024"
+                            minlength="10"
+                            required></textarea>
+                </div>
+            </div>
+            
             <button type="submit">Отправить данные</button>
-            <p>Забыли пароль? <a href="index.html">Восстановить</a><br>
-               Вы здесь впервые? <a href="#">Регистрация</a></p>
-            <!-- <a href="index.html">назад</a> -->
         </form>
     </main>
 </body>
