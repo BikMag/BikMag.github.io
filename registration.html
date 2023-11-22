@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <script defer src="scripts/registration-script.js"></script>
+    <!-- <script defer src="scripts/capcha.js"></script> -->
+
     <header>
         <div id="logo">
             <img src="images/river_logo.png" width="50" height="50">
@@ -39,7 +42,7 @@
                     <input type="tel" name="phone" id="phone" placeholder="+79001234567" required pattern="[+][7][0-9]{10}">
                 </span>
                 
-                <fieldset>
+                <fieldset class="gender">
                     <legend>Ваш пол:</legend>
                     <label>
                         <input type="radio" name="gender" id="male" value="m" checked>
@@ -50,6 +53,14 @@
                         Женский
                     </label>
                 </fieldset>
+                    
+                <fieldset class="capcha">
+                    <legend>Капча</legend>
+                    <span class="info">Введите содержимое капчи из оранжевого блока:</span>
+                    <span class="capcha-generator-block">0123456789</span>
+                    <input type="text" name="capcha" id="capcha" placeholder="Введите решение">
+                    <span class="message">Неправильно</span>
+                </fieldset>
     
                 <div class="about">
                     <label for="about">Расскажите о себе</label>
@@ -59,8 +70,7 @@
                             required></textarea>
                 </div>
             </div>
-            
-            <button type="submit">Отправить данные</button>
+            <button class="submit" type="submit">Отправить данные</button>
         </form>
     </main>
 </body>

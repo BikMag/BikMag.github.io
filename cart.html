@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script defer src="scripts/move_burger_menu.js"></script>
+    <script defer src="scripts/main_page.js"></script>
+
+    <header>
+        <div id="logo">
+            <img src="images/river_logo.png" width="50" height="50">
+            <h1>Реки мира</h1>
+        </div>
+
+        <!-- Создание оглавления на основе списков -->
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html#Title1">О проекте</a> <!-- Каждый пункт ссылается на нужный подзаголовок -->
+                </li>
+                <li><a href="index.html#Title2">Всё о реках</a>
+                </li>
+                <li><a href="index.html#Title3">Реки</a>
+                </li>
+                <li><a href="index.html#contacts">Контактная информация</a>
+                </li>
+                <li><a href="sign-in-pane.html">Войти</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="wishlist-btn" href="cart.html"><img src="images/star.png" width="50" height="50"></a>
+        <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
+    </header>
+
+    <main id="wishlist-main-block">
+        <section class="configs">
+            <span>Всего баллов: <h1 class="points">0</h1></span>
+            <article>
+                <button class="up-sort-btn" onclick="upsort()">Сортировать по возрастанию</button>
+                <button class="down-sort-btn" onclick="downsort()">Сортировать по убыванию</button>
+            </article>
+            <article class="filter">
+                <p>Фильтровать:</p>
+                <label>
+                    <input type="radio" name="filter" class="filter-mode" checked>
+                    >=
+                </label>
+                <label>
+                    <input type="radio" name="filter" class="filter-mode">
+                    <=
+                </label>
+                <input class="filter-input" type="number" value="0">
+                <button class="filter-btn" onclick="filterItems()">Фильтровать</button>
+                <button class="undo-filter-btn" onclick="createWishList()">Отменить</button>
+            </article>
+        </section>
+        <section class="wishlist">
+            <h2>Понравившиеся реки</h2>
+            <article id="Ind" class="item template">
+                <h1>Река Имя (Страна)</h1>
+                <img src="images/river.jpg" width="200">
+                <div class="controller">
+                    <button class="minus-btn" onclick="minusCount(this)">-</button>
+                    <input class="count-input" type="number" value="0">
+                    <button class="plus-btn" onclick="plusCount(this)">+</button>
+                </div>
+                <button class="del-btn" onclick="deleteItem(_this)"><img src="images/trash.png"></button>
+            </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="shell">
+            <span class="about">
+                <h2 class="title">О нашем сайте</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                   sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                   suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                   Quis aute iure reprehenderit in voluptate velit esse cillum dolore
+                   eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                   sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div id="social_media">
+                    <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
+                    <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
+                    <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
+                </div>
+            </span>
+            
+            <span class="links">
+                <h2 class="title">Ссылки</h2>
+                <ul>
+                    <li><a href="#">О проекте</a>
+                    </li>
+                    <li><a href="#">FAQ</a>
+                    </li>
+                    <li><a href="#">Помощь</a>
+                    </li>
+                    <li><a href="#">Отправить форму</a>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </span>
+            
+            <span id="contacts">
+                <h2 class="title">Контакты</h2>
+                <address>
+                    <div class="icon-block">
+                        <i class="fa fa-map-marker ico-contact"></i>
+                        <p class="description"> 128000, г. Москва, пр-кт Вернадского,
+                            дом 78, Кабинет А-108</p>
+                    </div>
+                
+                    <div class="icon-block">
+                        <i class="fa fa-envelope ico-contact"></i>
+                        <a class="description" id="email" href="mailto:example@mail.ru">example@mail.ru</a>
+                    </div>
+
+                    <div class="icon-block">
+                        <i class="fa fa-phone ico-contact"></i>
+                        <div class="tel-numbers">
+                            <a class="description" href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
+                            <a class="description" href="tel:+7 (900) 012-34-56">+7 (900) 012-34-56</a>
+                        </div>
+                    </div>
+                </address>
+            </span>
+        </div>
+        
+        <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
+    </footer>
+</body>

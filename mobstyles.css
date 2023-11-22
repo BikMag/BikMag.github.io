@@ -9,24 +9,12 @@
     }
 
     /* Шапка */
-    /* Невидимая кнопка для изменения появления меню при нажатии */
-    header input {
-        display: block;
-        /* opacity: 0.5; */
-        right: 0;
-
-        width: 50px;
-        height: 60px;
-
-        cursor: pointer;
-    }
-
     .nav-toggle {
         display: block;
         margin-right: 10px;
 
         max-width: 100%;
-        visibility: visible;
+        /* visibility: visible; */
     }
 
     .nav-toggle > span {
@@ -34,27 +22,22 @@
     }
 
     /* Анимация при нажатии на кнопку */
-    header input:checked ~ .nav-toggle > span
+    header input:checked ~ span
     {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px) scale(1.2, 1.2);
     }
 
-    header input:checked ~ .nav-toggle > span::before
+    header input:checked ~ span::before
     {
     opacity: 1;
     transform: rotate(-90deg) translate(-10px, -0.5px);
     }
 
-    header input:checked ~ .nav-toggle > span:after
+    header input:checked ~ span:after
     {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
-    }
-
-    header input:checked ~ #menu
-    {
-        transform: none;
     }
 
     #menu {

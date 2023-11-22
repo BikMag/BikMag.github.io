@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- <script src="scripts/button.js"></script> -->
+    <script defer src="scripts/main_page.js"></script>
+    <script defer src="scripts/move_burger_menu.js"></script>
+
     <!-- Шапка -->
     <header>
         <div id="logo">
             <img src="images/river_logo.png" width="50" height="50">
             <h1>Реки мира</h1>
         </div>
-
-        <input type="checkbox"/>
-        <nav class="nav-toggle"><span></span></nav>
 
         <!-- Создание оглавления на основе списков -->
         <nav id="menu">
@@ -37,6 +38,8 @@
                 </li>
             </ul>
         </nav>
+        <a class="wishlist-btn" href="cart.html"><img src="images/star.png" width="50" height="50"></a>
+        <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
     </header>
     
     <!-- Основная часть страницы -->
@@ -183,13 +186,20 @@
                             Начинается в г. Новомосковск, Тульская обл., и впадает
                             в азовское море у г. Ростов-на-Дону.
                         </p>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                     <figure id="Volga">
                         <img src="images/Volga_.jpg" width="400" height="300">
                         <figcaption>Волга (Россия)</figcaption>
                         <p> Самая протяженная река Центральной Росии. 
                             Протянулась от Валдаской возвышенности до Каспийского моря. 
-                            Имеет самый большой бассейн в Европе.</p>
+                            Имеет самый большой бассейн в Европе.
+                        </p>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                     <figure id="HuangHe">
                         <img src="images/HuangHe_.jpg" width="400" height="300">
@@ -199,22 +209,37 @@
                             Протекает от Тибета до Желтого моря.
                             Бассейн реки считается местом формирования китайского этноса.
                         </p>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                     <figure id="Amazonka">
                         <img src="images/Amazonka.jpg" width="400" height="300">
                         <figcaption>Амазонка (Бразилия)</figcaption>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                     <figure id="Missisipi">
                         <img src="images/Missisipi.jpg" width="400" height="300">
                         <figcaption>Миссисипи (США)</figcaption>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                     <figure id="Nil">
                         <img src="images/Nil.jpg" width="400" height="300">
                         <figcaption>Нил (Египет)</figcaption>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                     <figure id="Ind">
                         <img src="images/Ind.jpg" width="400" height="300">
                         <figcaption>Инд (Индия)</figcaption>
+                        <button class="like-btn" onclick="accumulate(this)">
+                            <img src="images/heart.png" width="20" height="20">
+                        </button>
                     </figure>
                 </article>
             </section>
@@ -478,6 +503,5 @@
         
         <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
     </footer>
-    
 </body>
 </html>
