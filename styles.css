@@ -1,9 +1,9 @@
 /* Задаём новый шрифт */
-@font-face {
+/* @font-face {
     font-family: 'Lobster';
     src: local('Lobster'),
     url(/fonts/Lobster-Regular.ttf);
-}
+} */
 
 /* Свойства всего сайта */
 body {
