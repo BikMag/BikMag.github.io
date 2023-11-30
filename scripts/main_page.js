@@ -135,7 +135,7 @@ const createWishList = function(wishlist = acc.wishlist) {
                     <input class="count-input" type="number" value="${item.count}" readonly>
                     <button class="plus-btn" onclick="plusCount(this)">+</button>
                 </div>
-                <button class="del-btn" onclick="deleteItem(this)"><img src="images/trash.png"></button>
+                <button class="del-btn" onclick="deleteItem(this)"><img src="images/bages/trash.png"></button>
             </article>
             `;
             containers += container;

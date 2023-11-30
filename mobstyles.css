@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
     body {
-        font-size: large;
+        font-size: larger;
 
         display: grid;
         grid-template-columns: auto;
