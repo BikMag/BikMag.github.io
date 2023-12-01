@@ -1,0 +1,54 @@
+#river-interface {
+    > main {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+
+        > #river-info {
+            width: 300px;
+            height: fit-content;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+            gap: 10px;
+
+            --gradientBG: linear-gradient(135deg, #0067fe 0%, #00c9ff 80%);
+
+            > h1 {
+                text-align: center;
+                margin: 0;
+                background: var(--gradientBG);
+            }
+
+            > figure {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: stretch;
+                margin: 0;
+            }
+
+            & figcaption, caption {
+                font-size: 14pt;
+                background: var(--gradientBG);
+                text-align: center;
+            }
+
+            > table {
+                /* font-size: 10pt; */
+            }
+
+            > .picture {
+                margin: 0 auto;
+                > img {
+                    width: 100%;
+                }
+                
+            }
+        }
+
+        > #river-content {
+            /* background-color: bisque; */
+            flex-grow: 1;
+        }
+    }
+}

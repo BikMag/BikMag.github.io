@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реки мира</title>
+    <link rel="favicon" href="/favicon.ico" sizes="any"> <!-- Создание иконки -->
+    <!-- <link rel="icon" type="images/png" href="/logo.png"> -->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/river-styles.css">
+    <link rel="stylesheet" href="/styles/mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
+    <!-- Добавить библиотеку иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body-river">
+    <script defer src="/scripts/main_page.js"></script>
+    <script defer src="/scripts/move_burger_menu.js"></script>
+    <!-- <script defer src="scripts/notifications.js"></script> -->
+
+    <!-- Шапка -->
+    <header>
+        <a id="logo" href="/index.html">
+            <img src="/images/logos/river_logo.png" width="50" height="50">
+            <h1>Реки мира</h1>
+        </a>
+
+        <!-- Создание оглавления на основе списков -->
+        <nav id="menu">
+            <ul>
+                <li><a href="/index.html">На главную</a> <!-- Каждый пункт ссылается на нужный подзаголовок -->
+                </li>
+                <li><a href="#Title2">Содержание</a>
+                </li>
+                <li><a href="#Title3">История</a>
+                </li>
+                <li><a href="#">Акватория</a>
+                </li>
+                <li><a href="#">Туризм</a>
+                </li>
+                <li><a href="#">Галерея</a>
+                </li>
+                <!-- <li><a href="sign-in-pane.html">Войти</a>
+                </li> -->
+            </ul>
+        </nav>
+        <a class="sign-in-btn" href="/sign-in-pane.html"><img src="/images/bages/registration.png" width="50" height="50"></a>
+        <a class="wishlist-btn" href="/cart.html"><img src="/images/bages/star.png" width="50" height="50"></a>
+        <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
+    </header>
+
+    <div id="river-interface">
+        <main>
+            <section id="river-info">
+                <h1>Река Волга</h1>
+                <figure class="picture">
+                    <img src="/images/Volga.jpg" width="300">
+                    <!-- <figcaption>Вид на вечернюю Волгу</figcaption> -->
+                </figure>
+                
+                <table border="1">
+                    <caption>Основная информация</caption>
+                    <thead>
+                    <tr>
+                        <th>Характеристика</th>
+                        <th>Величина</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>Страна</td>
+                        <td>Россия</td>
+                    </tr>
+                    <tr>
+                        <td>Длина</td>
+                        <td>3000 км</td>
+                    </tr>
+                    <tr>
+                        <td>Бассейн</td>
+                        <td>5500 км<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Исток</td>
+                        <td>д. Волговерховье (Осташковский район Тверской области)</td>
+                    </tr>
+                    <tr>
+                        <td>Устье</td>
+                        <td>Каспийское море</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <figure class="yandex-map">
+                    <figcaption>Карта</figcaption>
+                    <script
+                        type="text/javascript"
+                        charset="utf-8"
+                        async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d7da4c5887382b09bae7917ad505f07c63efa99ff053285abc4f196944c023e&amp;width=100%25&amp;height=295&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
+                </figure>
+            </section>
+            <section id="river-content">
+                <article>
+                    <p>
+                        <strong>Во́лга</strong> — река в европейской части России. Одна из крупнейших рек на Земле и самая большая по водности, площади бассейна и длине в Европе, а также крупнейшая в мире река, впадающая в бессточный (внутренний) водоём.
+                    </p>
+                </article>
+                <article>
+                    <h2>История</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus mauris justo, eu dictum dolor interdum a. Ut iaculis magna sed nulla egestas pharetra. Cras sapien nisi, tristique volutpat molestie non, bibendum lacinia justo. Quisque fringilla placerat metus, vitae lacinia ligula fringilla a. Nulla malesuada, ligula nec pretium varius, ex libero posuere tellus, at ornare libero massa in felis. Vestibulum fringilla non leo quis sodales. Maecenas feugiat aliquam massa. Proin interdum, urna ut rutrum luctus, velit dui posuere mi, hendrerit scelerisque arcu lectus sed elit.
+                        <br><br>
+                        Donec imperdiet ligula sed justo malesuada cursus. Fusce ac erat nisl. Curabitur ultrices nibh ut leo cursus convallis. In quis eros sem. Duis malesuada purus non luctus rutrum. Pellentesque ut maximus velit. Aenean faucibus hendrerit tellus, pharetra feugiat odio tempus convallis. Maecenas lectus risus, dictum sit amet pellentesque in, laoreet eu nunc.
+                    </p>
+                </article>
+                <article>
+                    <h2>Акватория</h2>
+                    <img src="/images/Volga_.jpg" width="150" style="float: right;">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus mauris justo, eu dictum dolor interdum a. Ut iaculis magna sed nulla egestas pharetra. Cras sapien nisi, tristique volutpat molestie non, bibendum lacinia justo. Quisque fringilla placerat metus, vitae lacinia ligula fringilla a. Nulla malesuada, ligula nec pretium varius, ex libero posuere tellus, at ornare libero massa in felis. Vestibulum fringilla non leo quis sodales. Maecenas feugiat aliquam massa. Proin interdum, urna ut rutrum luctus, velit dui posuere mi, hendrerit scelerisque arcu lectus sed elit.
+                        <br><br>
+                        Donec imperdiet ligula sed justo malesuada cursus. Fusce ac erat nisl. Curabitur ultrices nibh ut leo cursus convallis. In quis eros sem. Duis malesuada purus non luctus rutrum. Pellentesque ut maximus velit. Aenean faucibus hendrerit tellus, pharetra feugiat odio tempus convallis. Maecenas lectus risus, dictum sit amet pellentesque in, laoreet eu nunc.
+                    </p>
+                </article>
+                <article>
+                    <h2>Туризм</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus mauris justo, eu dictum dolor interdum a. Ut iaculis magna sed nulla egestas pharetra. Cras sapien nisi, tristique volutpat molestie non, bibendum lacinia justo. Quisque fringilla placerat metus, vitae lacinia ligula fringilla a. Nulla malesuada, ligula nec pretium varius, ex libero posuere tellus, at ornare libero massa in felis. Vestibulum fringilla non leo quis sodales. Maecenas feugiat aliquam massa. Proin interdum, urna ut rutrum luctus, velit dui posuere mi, hendrerit scelerisque arcu lectus sed elit.
+                        <br><br>
+                        Donec imperdiet ligula sed justo malesuada cursus. Fusce ac erat nisl. Curabitur ultrices nibh ut leo cursus convallis. In quis eros sem. Duis malesuada purus non luctus rutrum. Pellentesque ut maximus velit. Aenean faucibus hendrerit tellus, pharetra feugiat odio tempus convallis. Maecenas lectus risus, dictum sit amet pellentesque in, laoreet eu nunc.
+                    </p>
+                </article>
+                <article>
+                    <h2>Галерея</h2>
+                    <img src="/images/Nil.jpg" width="200">
+                    <img src="/images/Nil.jpg" width="200">
+                    <img src="/images/Nil.jpg" width="200">
+                </article>
+            </section>
+        </main>
+    
+        <!-- Подвал -->
+        <footer>
+            <div class="shell">
+                <span class="about">
+                    <h2 class="title">О нашем сайте</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                    sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                    suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                    Quis aute iure reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div id="social_media">
+                        <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
+                        <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
+                        <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
+                    </div>
+                </span>
+                
+                <span class="links">
+                    <h2 class="title">Ссылки</h2>
+                    <ul>
+                        <li><a href="#">О проекте</a>
+                        </li>
+                        <li><a href="#">FAQ</a>
+                        </li>
+                        <li><a href="#">Помощь</a>
+                        </li>
+                        <li><a href="#">Отправить форму</a>
+                        </li>
+                        <li><a href="#contacts" onclick="showNotification('Hello')">Контакты</a>
+                        </li>
+                    </ul>
+                </span>
+                
+                <span id="contacts">
+                    <h2 class="title">Контакты</h2>
+                    <address>
+                        <div class="icon-block">
+                            <i class="fa fa-map-marker ico-contact"></i>
+                            <p class="description"> 128000, г. Москва, пр-кт Вернадского,
+                                дом 78, Кабинет А-108</p>
+                        </div>
+                    
+                        <div class="icon-block">
+                            <i class="fa fa-envelope ico-contact"></i>
+                            <a class="description" id="email" href="mailto:example@mail.ru">example@mail.ru</a>
+                        </div>
+    
+                        <div class="icon-block">
+                            <i class="fa fa-phone ico-contact"></i>
+                            <div class="tel-numbers">
+                                <a class="description" href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
+                                <a class="description" href="tel:+7 (900) 012-34-56">+7 (900) 012-34-56</a>
+                            </div>
+                        </div>
+                    </address>
+                </span>
+            </div>
+            
+            <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
+        </footer>
+    </div>
+    
+</body>
+</html>

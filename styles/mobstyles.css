@@ -2,6 +2,10 @@
     body {
         font-size: larger;
 
+        
+    }
+
+    #index-pane {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
@@ -58,6 +62,7 @@
 
     #menu li {
         width: 100%;
+        padding: 15px 0;
     }
 
     #menu li:hover {
@@ -85,6 +90,19 @@
 
     aside {
         padding-top: 0;
+    }
+
+    #river-interface {
+        > main {
+            flex-direction: column;
+    
+            > #river-info {
+                width: auto;
+            }
+    
+            > #river-content {
+            }
+        }
     }
 }
 
@@ -127,6 +145,21 @@
 
             > .contacts {
                 grid-area: contacts;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        /* width: 100%; */
+        overflow: hidden;
+    }
+    header {
+        > #logo {
+            min-width: 0;
+            > h1 {
+                display: none;
             }
         }
     }

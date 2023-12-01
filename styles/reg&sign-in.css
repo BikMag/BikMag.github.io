@@ -1,0 +1,322 @@
+/* Блок входа */
+#sign-in-block {
+    --bg-color: #3d5a8f94;
+    position: relative;
+    grid-column: 1 / -1;
+
+    > span {
+        content: "";
+        position: absolute;
+    
+        display: block;
+        border-radius: 15px;
+    
+        border-radius: 20px;
+        padding: 5px;
+        
+        background-color: var(--bg-color);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    > span:nth-child(1) {
+        --size: 40px;
+        width: var(--size);
+        height: var(--size);
+        top: calc(30%);
+        left: calc(50% - var(--size) / 2 - 150px);
+    
+        z-index: -1;
+    
+        animation: move-squares 7s infinite ease-in-out -700ms alternate;
+    }
+    > span:nth-child(2) {
+        --size: 60px;
+        width: var(--size);
+        height: var(--size);
+        top: calc(30% + 55px - var(--size) / 2 + 20px);
+        left: calc(50% - var(--size) / 2 + 190px);
+    
+        z-index: 1;
+    
+        animation: move-squares 9s infinite ease-in-out -300ms alternate-reverse;
+    }
+    > span:nth-child(3) {
+        --size: 50px;
+        width: var(--size);
+        height: var(--size);
+        top: calc(30% + 55px - var(--size) / 2 + 135px);
+        left: calc(50%);
+    
+        z-index: 1;
+    
+        animation: move-squares 7s infinite ease-in-out -500ms alternate-reverse;
+    }
+    > span:nth-child(4) {
+        --size: 45px;
+        width: var(--size);
+        height: var(--size);
+        top: calc(30% + 55px - var(--size) / 2 - 150px);
+        left: calc(50% - var(--size) / 2 - 50px);
+    
+        z-index: -1;
+    
+        animation: move-squares 10s infinite ease-in-out 0s alternate;
+    }
+
+    > .pane {
+        /* visibility: hidden; */
+
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 10px;
+    
+        margin: auto;
+        margin-top: 60px;
+        padding: 30px;
+        border-radius: 20px;
+        
+        background-color: var(--bg-color);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    
+        > h2 {
+            color: white;
+            text-decoration: underline;
+        }
+    
+        > input {
+            border: none;
+            border-radius: 20px;
+            padding: 5px;
+            padding-left: 1em;
+        }
+    
+        > button {
+            background-color: #00a2ff;
+            color: white;
+            box-shadow: 0 6px #515151;
+            border: none;
+            border-radius: 20px;
+            padding: 5px;
+        
+            transition: all .5s;
+        }
+        > button:hover {
+            color: black;
+            background-color: #0cdfae;
+            box-shadow: 0 3px #515151;
+            transform: translateY(3px);
+    
+            cursor: pointer;
+        }
+        > p {
+            color: white;
+            margin: 0;
+            padding: 0;
+    
+            > a {
+                color: aquamarine;
+                text-decoration: none;
+            }
+            > a:focus {
+                color: #002200;
+            }
+        }
+    }
+}
+
+@keyframes move-squares {
+    25% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translate(-25px, 15px);
+    }
+    75% {
+        transform: translateX(40px);
+    }
+    to {
+        transform: translateX(-25px);
+    }
+}
+
+/* Блок регистрации */
+#reg-block{
+    --bg-color: #3d5a8fac;
+    position: relative;
+    grid-column: 1 / -1;
+
+    & h2 {
+        color: white;
+        text-decoration: underline;
+    }
+
+    > .pane {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        gap: 10px;
+        width: 640px;
+        color: white;
+    
+        margin: auto;
+        margin-top: 60px;
+        padding: 30px;
+        border-radius: 20px;
+        
+        background-color: var(--bg-color);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+
+        > .form-field {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: 
+                "name surname"
+                "email tel"
+                "gender capcha"
+                "about about";
+            gap: 10px 30px;
+
+            > span {
+                display: flex;
+                justify-content: right;
+                gap: 10px;
+
+                > input {
+                    width: 65%;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 5px;
+                    padding-left: 1em;
+                }
+            }
+
+            > fieldset {
+                width: fit-content;
+                border-radius: 20px;
+                border: 1px solid white;
+
+                > legend {
+                    text-align: center;
+                }
+            }
+
+            > .gender {
+                height: fit-content;
+            }
+
+            > .capcha {
+                text-align: left;
+                display: grid;
+                grid-template-columns: 7em auto;
+                grid-template-areas:
+                        "info info"
+                        "capcha input"
+                        "message message";
+                gap: 10px;
+
+                > .info {
+                    grid-area: info;
+                }
+
+                > .capcha-generator-block {
+                    /* width: fit-content; */
+                    background-color: wheat;
+                    color: gray;
+                    padding: 10px;
+                    border-radius: 20px;
+
+                    text-align: center;
+                    font-family: monospace;
+                    user-select: none;
+
+                    grid-area: capcha;
+                }
+
+                > input {
+                    min-width: 80px;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 5px;
+                    padding-left: 1em;
+
+                    grid-area: input;
+                }
+
+                > .message {
+                    display: none;
+                    color: red;
+                    grid-area: message;
+                }
+            }
+
+            > .about {
+                grid-column: 1 / -1;
+                grid-row: -2 / -1;
+
+                > textarea {
+                    margin-top: 5px;
+                    width: calc(100% - 2em - 2px);
+                    resize: none;
+                    border: none;
+                    border-radius: 20px;
+                    padding-inline: 1em;
+                }
+            }
+
+            & input, & textarea {
+                transition: opacity .6s, 
+                            background-color .6s,
+                            transform .6s;
+                opacity: 0.8;
+            }
+
+            & input:hover, & textarea:hover {
+                opacity: 1;
+            }
+
+            & input:focus, & textarea:focus {
+                background-color: #00f09e;
+                outline: none;
+                opacity: 1;
+
+                transform: translateY(-3px);
+            }
+        }
+    
+        > button {
+            margin: 0 auto;
+            background-color: #00a2ff;
+            color: white;
+            box-shadow: 0 6px #515151;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+        
+            transition: transform .5s,
+                        color .5s,
+                        background-color .5s,
+                        box-shadow .5s;
+        }
+        > button:hover {
+            color: black;
+            background-color: #0cdfae;
+            box-shadow: 0 3px #515151;
+            transform: translateY(3px);
+    
+            cursor: pointer;
+        }
+        > button:disabled, > button:hover:disabled {
+            /* transition: none; */
+            transform: none;
+            background-color: #63636366;
+            color: #00000066;
+            box-shadow: 0 6px #515151;
+            cursor: not-allowed;
+        }
+    }
+}

@@ -6,11 +6,8 @@
     <title>Реки мира</title>
     <link rel="favicon" href="favicon.ico" sizes="any"> <!-- Создание иконки -->
     <!-- <link rel="icon" type="images/png" href="/logo.png"> -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
     <!-- Добавить библиотеку иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,7 +15,7 @@
     <!-- <script src="scripts/button.js"></script> -->
     <script defer src="scripts/main_page.js"></script>
     <script defer src="scripts/move_burger_menu.js"></script>
-    <script defer src="scripts/notifications.js"></script>
+    <!-- <script defer src="scripts/notifications.js"></script> -->
 
     <!-- Шапка -->
     <header>
@@ -32,407 +29,413 @@
             <ul>
                 <li><a href="#Title1">О проекте</a> <!-- Каждый пункт ссылается на нужный подзаголовок -->
                 </li>
-                <li><a href="#Title2">Всё о реках</a>
+                <li><a href="#Title2">О реках</a>
                 </li>
-                <li><a href="#Title3">Реки</a>
+                <li><a href="#Title3">Галерея</a>
+                </li>
+                <li><a href="#">Определения</a>
                 </li>
                 <li><a href="#contacts">Контактная информация</a>
                 </li>
-                <li><a href="sign-in-pane.html">Войти</a>
-                </li>
+                <!-- <li><a href="sign-in-pane.html">Войти</a>
+                </li> -->
             </ul>
         </nav>
+        <a class="sign-in-btn" href="sign-in-pane.html"><img src="images/bages/registration.png" width="50" height="50"></a>
         <a class="wishlist-btn" href="cart.html"><img src="images/bages/star.png" width="50" height="50"></a>
         <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
     </header>
     
     <!-- Основная часть страницы -->
-    <main>
-        <div class="content">
-            <section>
-                <h2 id="Title1" class="anchor">О проекте</h2>
-
-                <article>
-                    <h3 id="Subtitle1.1">Что это</h3>
-                    <p><i>"Реки мира"</i> - это проект об <strong>интересных</strong> фактах речной акватории Земли.
-                        <br>Здесь можно узнать о реках-рекордсменах со всей планеты.</p>
-                </article>
-            
-                <article>
-                    <h3 id="Subtitle1.2">Для чего нужен</h3>
-                    <p>Данный <em>проект</em> является курсовой работой для <abbr>РТУ МИРЭА</abbr>.</p>
-                </article>
-
-                <article>
-                    <h3 id="Subtitle1.3">Перспективы</h3>
-                    <p>В будущем <em>проект</em> может перерасти в полноценный туристический портал или энциклопедию.</p>
-                </article>
-            </section>
-            
-            <section>
-                <h2 id="Title2" class="anchor">Всё о реках</h2>
-                <!-- Циатата -->
-                <blockquote><i>"Все реки являются матерями моря."</i></blockquote>
-
-                <article>
-                    <h3 id="Subtitle2.1">Роль рек в нашей жизни</h3>
-                    
-                    <!-- Фото-ссылка на другой сайт (обёрнут тегом figure для открытия страницы в новой вкладке) -->
-                    <figure id="kolyma">
-                        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8B%D0%BC%D0%B0" target="_blank">
-                            <img src="images/river.jpg" width="400" height="240">
-                        </a>
-                        <figcaption>Река Колыма</figcaption>
-                    </figure>
-
-                    <p>Реки - это источник <u>воды</u> (H<sub>2</sub>O) и <u>пищи</u>.
-                        Практически все поселения строились вблизи рек<sup>уточнить</sup>.
-                        <br>
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text 
-                        Text Text Text Text Text Text Text Text Text Text Text Text
-                        <br> 
-                        Реки вдохновляли поэтов на написание стихотворений. Так, Тютчев Ф.И. писал о реке:
-                    </p>
-                    <pre>
-В небе тают облака,
-И, лучистая на зное,
-В искрах катится <b>река</b>,
-Словно зеркало стальное…
-
-Час от часу жар сильней,
-Тень ушла к немым дубровам,
-И с белеющих полей
-Веет запахом медовым.
-
-Чудный день! Пройдут века —
-Так же будут, в вечном строе,
-Течь и искриться <b>река</b>
-И поля дышать на зное.
-                    </pre>
-                </article>
-
-                <!-- Список описаний -->
-                <article>
-                    <h3 id="Subtitle2.2">Определения:</h3>
-                    <dl>
-                        <dt><b>Река</b></dt>
-                        <dd>Поток воды, имеющий лентообразную форму.</dd>
-                        <dd>Разновидность водоёма.</dd>
-
-                        <dt><b>Исток реки</b></dt>
-                        <dd>Участок, где река берёт своё начало.</dd>
-
-                        <dt><b>Устье реки</b></dt>
-                        <dd>Та часть реки, где она заканчивается и впадает в другую реку, озеро, море.</dd>
-                        <dd>Конец реки.</dd>
-
-                        <dt><b>Бассейн реки</b></dt>
-                        <dd>Площадь земной поверхности, по которой протекает главная река со всеми её притоками.</dd>
-
-                        <dt><b>Водораздел</b></dt>
-                        <dd>Линия, ограничивающая бассейн реки.</dd>
-                    </dl>
-
-                    <!-- Каркас для карты изображения (при нажатии на одну из фигур страница перематывается наверх) -->
-                    <figure id="map"> <!-- Само фото, в которую встраивается карта -->
-                        <!--img src="images/map.png" width="400" height="300" usemap="#map0"-->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14376.983751001073!2d37.4710501580796!3d55.67399529931266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695712666840!5m2!1sru!2sru"
-                                width="540"
-                                height="320"
-                                style="border:0;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                        <figcaption>Карта</figcaption>
-                    </figure>
-                    <figure class="yandex-map">
-                        <script class="abcd"
-                            type="text/javascript"
-                            charset="utf-8"
-                            async
-                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A381cfe7626f9a5858d2e5ee2e7610979d888f5b7d5aaae7197be06aa06b936df&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
-                        </script>
-                    </figure>
-                    
-                    <figure class="videos">
-                        <iframe width="540"
-                                height="300"
-                                src="https://www.youtube.com/embed/NHRuFmwqrak?si=zuilmdH67yt7Lxjm"
-                                title="YouTube video player"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen>
-                        </iframe>
-                        <figcaption>Видео</figcaption>
-                        <div id="my_video">
-                            <video src="videos/reka-don.mp4" class="content" autoplay="" muted="" loop=""></video>
-                        </div>
-                    </figure>
-                </article>
-            </section>
-
-            <section id="galery">
-                <h2 id="Title3" class="anchor">Посетите реки!</h2>
-                <article class="pictures">
-                    <figure id="Don">
-                        <img src="images/Don_.jpg" width="400" height="300" onclick="docLocation('#')">
-                        <figcaption>Дон (Россия)</figcaption>
-                        <p>Живописная река, протекающая в Центральной и Южной России.
-                            Начинается в г. Новомосковск, Тульская обл., и впадает
-                            в азовское море у г. Ростов-на-Дону.
+    <div id="index-pane">
+        <main>
+            <div class="content">
+                <section>
+                    <h2 id="Title1" class="anchor">О проекте</h2>
+    
+                    <article>
+                        <h3 id="Subtitle1.1">Что это</h3>
+                        <p><i>"Реки мира"</i> - это проект об <strong>интересных</strong> фактах речной акватории Земли.
+                            <br>Здесь можно узнать о реках-рекордсменах со всей планеты.</p>
+                    </article>
+                
+                    <article>
+                        <h3 id="Subtitle1.2">Для чего нужен</h3>
+                        <p>Данный <em>проект</em> является курсовой работой для <abbr>РТУ МИРЭА</abbr>.</p>
+                    </article>
+    
+                    <article>
+                        <h3 id="Subtitle1.3">Перспективы</h3>
+                        <p>В будущем <em>проект</em> может перерасти в полноценный туристический портал или энциклопедию.</p>
+                    </article>
+                </section>
+                
+                <section>
+                    <h2 id="Title2" class="anchor">Всё о реках</h2>
+                    <!-- Циатата -->
+                    <blockquote><i>"Все реки являются матерями моря."</i></blockquote>
+    
+                    <article>
+                        <h3 id="Subtitle2.1">Роль рек в нашей жизни</h3>
+                        
+                        <!-- Фото-ссылка на другой сайт (обёрнут тегом figure для открытия страницы в новой вкладке) -->
+                        <figure id="kolyma">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8B%D0%BC%D0%B0" target="_blank">
+                                <img src="images/river.jpg" width="400" height="240">
+                            </a>
+                            <figcaption>Река Колыма</figcaption>
+                        </figure>
+    
+                        <p>Реки - это источник <u>воды</u> (H<sub>2</sub>O) и <u>пищи</u>.
+                            Практически все поселения строились вблизи рек<sup>уточнить</sup>.
+                            <br>
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text 
+                            Text Text Text Text Text Text Text Text Text Text Text Text
+                            <br> 
+                            Реки вдохновляли поэтов на написание стихотворений. Так, Тютчев Ф.И. писал о реке:
                         </p>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                    <figure id="Volga">
-                        <img src="images/Volga_.jpg" width="400" height="300">
-                        <figcaption>Волга (Россия)</figcaption>
-                        <p> Самая протяженная река Центральной Росии. 
-                            Протянулась от Валдаской возвышенности до Каспийского моря. 
-                            Имеет самый большой бассейн в Европе.
-                        </p>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                    <figure id="HuangHe">
-                        <img src="images/HuangHe_.jpg" width="400" height="300">
-                        <figcaption>Хуанхэ (Китай)</figcaption>
-                        <p>Хуанхэ в переводе с китайского означает "Жёлтая река". 
-                            Из-за наносов река обретает желтоватый цвет. 
-                            Протекает от Тибета до Желтого моря.
-                            Бассейн реки считается местом формирования китайского этноса.
-                        </p>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                    <figure id="Amazonka">
-                        <img src="images/Amazonka.jpg" width="400" height="300">
-                        <figcaption>Амазонка (Бразилия)</figcaption>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                    <figure id="Missisipi">
-                        <img src="images/Missisipi.jpg" width="400" height="300">
-                        <figcaption>Миссисипи (США)</figcaption>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                    <figure id="Nil">
-                        <img src="images/Nil.jpg" width="400" height="300">
-                        <figcaption>Нил (Египет)</figcaption>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                    <figure id="Ind">
-                        <img src="images/Ind.jpg" width="400" height="300">
-                        <figcaption>Инд (Индия)</figcaption>
-                        <a class="clickable" href="#"></a>
-                        <button class="like-btn" onclick="accumulate(this)">
-                            <img src="images/bages/heart.png" width="20" height="20">
-                        </button>
-                    </figure>
-                </article>
-            </section>
-
-            <section class="wrapper">
-                <div class="box">
-                  <span></span>
-                  <div class="content">
-                    <h2>Карточка 1</h2>
-                    <p>There could be some informations regarding stuff contained on your web page.</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                </div>
-                <div class="box">
-                  <span></span>
-                  <div class="content">
-                    <h2>Карточка 2</h2>
-                    <p>Or they could be used to showcase different payment plans for your services.</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                </div>
-                <div class="box">
-                  <span></span>
-                  <div class="content">
-                    <h2>Карточка 3</h2>
-                    <p>With a button redirecting customers to a page with details about a chosen plan.</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                </div>
-            </section>
-
-            <section class="cards-2">
-                <div class="card">
-                    <h2>01</h2>
-                    <p>There could be some informations regarding stuff contained on your web page.</p>
-                    <a href="#">Подробнее</a>
-                </div>
-                <div class="card">
-                    <h2>02</h2>
-                    <p>Or they could be used to showcase different payment plans for your services.</p>
-                    <a href="#">Подробнее</a>
-                </div>
-                <div class="card">
-                    <h2>03</h2>
-                    <p>With a button redirecting customers to a page with details about a chosen plan.</p>
-                    <a href="#">Подробнее</a>
-                </div>
-            </section>
-
-            <section class="cards-3">
-                <div class="card">
-                    <div class="content">
+                        <pre>
+    В небе тают облака,
+    И, лучистая на зное,
+    В искрах катится <b>река</b>,
+    Словно зеркало стальное…
+    
+    Час от часу жар сильней,
+    Тень ушла к немым дубровам,
+    И с белеющих полей
+    Веет запахом медовым.
+    
+    Чудный день! Пройдут века —
+    Так же будут, в вечном строе,
+    Течь и искриться <b>река</b>
+    И поля дышать на зное.
+                        </pre>
+                    </article>
+    
+                    <!-- Список описаний -->
+                    <article>
+                        <h3 id="Subtitle2.2">Определения:</h3>
+                        <dl>
+                            <dt><b>Река</b></dt>
+                            <dd>Поток воды, имеющий лентообразную форму.</dd>
+                            <dd>Разновидность водоёма.</dd>
+    
+                            <dt><b>Исток реки</b></dt>
+                            <dd>Участок, где река берёт своё начало.</dd>
+    
+                            <dt><b>Устье реки</b></dt>
+                            <dd>Та часть реки, где она заканчивается и впадает в другую реку, озеро, море.</dd>
+                            <dd>Конец реки.</dd>
+    
+                            <dt><b>Бассейн реки</b></dt>
+                            <dd>Площадь земной поверхности, по которой протекает главная река со всеми её притоками.</dd>
+    
+                            <dt><b>Водораздел</b></dt>
+                            <dd>Линия, ограничивающая бассейн реки.</dd>
+                        </dl>
+    
+                        <!-- Каркас для карты изображения (при нажатии на одну из фигур страница перематывается наверх) -->
+                        <figure id="map"> <!-- Само фото, в которую встраивается карта -->
+                            <!--img src="images/map.png" width="400" height="300" usemap="#map0"-->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14376.983751001073!2d37.4710501580796!3d55.67399529931266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695712666840!5m2!1sru!2sru"
+                                    width="540"
+                                    height="320"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <figcaption>Карта</figcaption>
+                        </figure>
+                        <figure class="yandex-map">
+                            <script class="abcd"
+                                type="text/javascript"
+                                charset="utf-8"
+                                async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d7da4c5887382b09bae7917ad505f07c63efa99ff053285abc4f196944c023e&amp;width=100%25&amp;height=295&amp;lang=ru_RU&amp;scroll=true"></script>
+                            </script>
+                        </figure>
+                        
+                        <figure class="videos">
+                            <iframe width="540"
+                                    height="300"
+                                    src="https://www.youtube.com/embed/NHRuFmwqrak?si=zuilmdH67yt7Lxjm"
+                                    title="YouTube video player"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                            </iframe>
+                            <figcaption>Видео</figcaption>
+                            <div id="my_video">
+                                <video src="videos/reka-don.mp4" class="content" autoplay="" muted="" loop=""></video>
+                            </div>
+                        </figure>
+                    </article>
+                </section>
+    
+                <section id="galery">
+                    <h2 id="Title3" class="anchor">Посетите реки!</h2>
+                    <article class="pictures">
+                        <figure id="Don">
+                            <img src="images/Don_.jpg" width="400" height="300" onclick="docLocation('#')">
+                            <figcaption>Дон (Россия)</figcaption>
+                            <p>Живописная река, протекающая в Центральной и Южной России.
+                                Начинается в г. Новомосковск, Тульская обл., и впадает
+                                в азовское море у г. Ростов-на-Дону.
+                            </p>
+                            <a class="clickable" href="#"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                        <figure id="Volga">
+                            <img src="images/Volga_.jpg" width="400" height="300">
+                            <figcaption>Волга (Россия)</figcaption>
+                            <p> Самая протяженная река Центральной Росии. 
+                                Протянулась от Валдаской возвышенности до Каспийского моря. 
+                                Имеет самый большой бассейн в Европе.
+                            </p>
+                            <a class="clickable" href="/river-web-pages/volga-river.html"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                        <figure id="HuangHe">
+                            <img src="images/HuangHe_.jpg" width="400" height="300">
+                            <figcaption>Хуанхэ (Китай)</figcaption>
+                            <p>Хуанхэ в переводе с китайского означает "Жёлтая река". 
+                                Из-за наносов река обретает желтоватый цвет. 
+                                Протекает от Тибета до Желтого моря.
+                                Бассейн реки считается местом формирования китайского этноса.
+                            </p>
+                            <a class="clickable" href="#"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                        <figure id="Amazonka">
+                            <img src="images/Amazonka.jpg" width="400" height="300">
+                            <figcaption>Амазонка (Бразилия)</figcaption>
+                            <a class="clickable" href="#"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                        <figure id="Missisipi">
+                            <img src="images/Missisipi.jpg" width="400" height="300">
+                            <figcaption>Миссисипи (США)</figcaption>
+                            <a class="clickable" href="#"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                        <figure id="Nil">
+                            <img src="images/Nil.jpg" width="400" height="300">
+                            <figcaption>Нил (Египет)</figcaption>
+                            <a class="clickable" href="#"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                        <figure id="Ind">
+                            <img src="images/Ind.jpg" width="400" height="300">
+                            <figcaption>Инд (Индия)</figcaption>
+                            <a class="clickable" href="#"></a>
+                            <button class="like-btn" onclick="accumulate(this)">
+                                <img src="images/bages/heart.png" width="20" height="20">
+                            </button>
+                        </figure>
+                    </article>
+                </section>
+    
+                <section class="wrapper">
+                    <div class="box">
+                      <span></span>
+                      <div class="content">
+                        <h2>Карточка 1</h2>
+                        <p>There could be some informations regarding stuff contained on your web page.</p>
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <span></span>
+                      <div class="content">
+                        <h2>Карточка 2</h2>
+                        <p>Or they could be used to showcase different payment plans for your services.</p>
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <span></span>
+                      <div class="content">
+                        <h2>Карточка 3</h2>
+                        <p>With a button redirecting customers to a page with details about a chosen plan.</p>
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
+                </section>
+    
+                <section class="cards-2">
+                    <div class="card">
                         <h2>01</h2>
-                        <h3>Заголовок 1</h3>
                         <p>There could be some informations regarding stuff contained on your web page.</p>
                         <a href="#">Подробнее</a>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="content">
+                    <div class="card">
                         <h2>02</h2>
-                        <h3>Заголовок 2</h3>
                         <p>Or they could be used to showcase different payment plans for your services.</p>
                         <a href="#">Подробнее</a>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="content">
+                    <div class="card">
                         <h2>03</h2>
-                        <h3>Заголовок 3</h3>
                         <p>With a button redirecting customers to a page with details about a chosen plan.</p>
                         <a href="#">Подробнее</a>
                     </div>
-                </div>
-            </section>
-            <section>
-                <h2>Создать список</h2>
-                <article>
-                    <ul class="list-maker">
-                        <li>hello</li>
-                        <li>hello</li>
-                        <li>hello</li>
-                    </ul>
-                </article>
-                <button onclick="createList()">Добавить</button>
-            </section>
-        </div>
-
-        <div id="notification" onclick="clicked()">
-            <a id="notification_menu_sym"></a>
-            <span class="title">Уведомления</span>
-            <ol class="block-wrap">
-                <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
-                <li><a>Какие места стоит посетить</a></li>
-                <li><a>Открылся новый туристический маршрут!</a></li>
-                <li><a>Часто задаваемые вопросы</a></li>
-            </ol>
-        </div>
-    </main>
-
-    <aside>
-        <section>
-            <p><i>Здесь могла бы быть ваша реклама</i></p>
-            <img src="images/logos/river_logo.png" width="50" height="50">
-        </section>
-    </aside>
-
-    <!-- Подвал -->
-    <footer>
-        <div class="shell">
-            <span class="about">
-                <h2 class="title">О нашем сайте</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                   sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                   Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
-                   suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-                   Quis aute iure reprehenderit in voluptate velit esse cillum dolore
-                   eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
-                   sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <div id="social_media">
-                    <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
-                    <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
-                    <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
-                </div>
-            </span>
-            
-            <span class="links">
-                <h2 class="title">Ссылки</h2>
-                <ul>
-                    <li><a href="#">О проекте</a>
-                    </li>
-                    <li><a href="#">FAQ</a>
-                    </li>
-                    <li><a href="#">Помощь</a>
-                    </li>
-                    <li><a href="#">Отправить форму</a>
-                    </li>
-                    <li><a href="#contacts" onclick="showNotification('Hello')">Контакты</a>
-                    </li>
-                </ul>
-            </span>
-            
-            <span id="contacts">
-                <h2 class="title">Контакты</h2>
-                <!-- <address>
-                    <a id="email" href="mailto:somepeople@mail.ru">example@mail.ru</a><br>
-                    <a href="tel:+7 800 555-35-35">+7 800 555-35-35</a>
-                    <p>Ссылка на наш <a href="https://www.yandex.ru/">паблик</a></p>
-                </address> -->
-                <address>
-                    <div class="icon-block">
-                        <i class="fa fa-map-marker ico-contact"></i>
-                        <p class="description"> 128000, г. Москва, пр-кт Вернадского,
-                            дом 78, Кабинет А-108</p>
-                    </div>
-                
-                    <div class="icon-block">
-                        <i class="fa fa-envelope ico-contact"></i>
-                        <a class="description" id="email" href="mailto:example@mail.ru">example@mail.ru</a>
-                    </div>
-
-                    <div class="icon-block">
-                        <i class="fa fa-phone ico-contact"></i>
-                        <div class="tel-numbers">
-                            <a class="description" href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
-                            <a class="description" href="tel:+7 (900) 012-34-56">+7 (900) 012-34-56</a>
+                </section>
+    
+                <section class="cards-3">
+                    <div class="card">
+                        <div class="content">
+                            <h2>01</h2>
+                            <h3>Заголовок 1</h3>
+                            <p>There could be some informations regarding stuff contained on your web page.</p>
+                            <a href="#">Подробнее</a>
                         </div>
                     </div>
-                </address>
-            </span>
-        </div>
-        
-        <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
-    </footer>
+                    <div class="card">
+                        <div class="content">
+                            <h2>02</h2>
+                            <h3>Заголовок 2</h3>
+                            <p>Or they could be used to showcase different payment plans for your services.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>03</h2>
+                            <h3>Заголовок 3</h3>
+                            <p>With a button redirecting customers to a page with details about a chosen plan.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Создать список</h2>
+                    <article>
+                        <ul class="list-maker">
+                            <li>hello</li>
+                            <li>hello</li>
+                            <li>hello</li>
+                        </ul>
+                    </article>
+                    <button onclick="createList()">Добавить</button>
+                </section>
+            </div>
+    
+            <div id="notification" onclick="clicked()">
+                <a id="notification_menu_sym"></a>
+                <span class="title">Уведомления</span>
+                <ol class="block-wrap">
+                    <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
+                    <li><a>Какие места стоит посетить</a></li>
+                    <li><a>Открылся новый туристический маршрут!</a></li>
+                    <li><a>Часто задаваемые вопросы</a></li>
+                </ol>
+            </div>
+        </main>
+    
+        <aside>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="images/logos/river_logo.png" width="50" height="50">
+            </section>
+        </aside>
+    
+        <!-- Подвал -->
+        <footer>
+            <div class="shell">
+                <span class="about">
+                    <h2 class="title">О нашем сайте</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                       sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                       suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                       Quis aute iure reprehenderit in voluptate velit esse cillum dolore
+                       eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                       sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div id="social_media">
+                        <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
+                        <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
+                        <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
+                    </div>
+                </span>
+                
+                <span class="links">
+                    <h2 class="title">Ссылки</h2>
+                    <ul>
+                        <li><a href="#">О проекте</a>
+                        </li>
+                        <li><a href="#">FAQ</a>
+                        </li>
+                        <li><a href="#">Помощь</a>
+                        </li>
+                        <li><a href="#">Отправить форму</a>
+                        </li>
+                        <li><a href="#contacts" onclick="showNotification('Hello')">Контакты</a>
+                        </li>
+                    </ul>
+                </span>
+                
+                <span id="contacts">
+                    <h2 class="title">Контакты</h2>
+                    <!-- <address>
+                        <a id="email" href="mailto:somepeople@mail.ru">example@mail.ru</a><br>
+                        <a href="tel:+7 800 555-35-35">+7 800 555-35-35</a>
+                        <p>Ссылка на наш <a href="https://www.yandex.ru/">паблик</a></p>
+                    </address> -->
+                    <address>
+                        <div class="icon-block">
+                            <i class="fa fa-map-marker ico-contact"></i>
+                            <p class="description"> 128000, г. Москва, пр-кт Вернадского,
+                                дом 78, Кабинет А-108</p>
+                        </div>
+                    
+                        <div class="icon-block">
+                            <i class="fa fa-envelope ico-contact"></i>
+                            <a class="description" id="email" href="mailto:example@mail.ru">example@mail.ru</a>
+                        </div>
+    
+                        <div class="icon-block">
+                            <i class="fa fa-phone ico-contact"></i>
+                            <div class="tel-numbers">
+                                <a class="description" href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
+                                <a class="description" href="tel:+7 (900) 012-34-56">+7 (900) 012-34-56</a>
+                            </div>
+                        </div>
+                    </address>
+                </span>
+            </div>
+            
+            <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
+        </footer>
+    </div>
+    
 </body>
 </html>
