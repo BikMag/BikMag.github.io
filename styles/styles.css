@@ -131,6 +131,7 @@ header {
 
                     > img {
                         filter: invert(1);
+                        -webkit-filter: invert(1);
                         color: white;
                         width: 25px; height: 25px;
                     }
