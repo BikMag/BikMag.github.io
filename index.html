@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реки мира</title>
     <link rel="icon" href="favicon.ico"> <!-- Создание иконки -->
-    <!-- <link rel="icon" type="images/png" href="/logo.png"> -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
     <!-- Добавить библиотеку иконок -->
@@ -20,29 +19,25 @@
     <!-- Шапка -->
     <header>
         <a id="logo" href="index.html">
-            <img src="images/logos/river_logo.png" width="50" height="50">
+            <img src="/images/logos/river_logo.png" width="50" height="50">
             <h1>Реки мира</h1>
         </a>
 
         <!-- Создание оглавления на основе списков -->
         <nav id="menu">
             <ul>
-                <li><a href="#Title1">О проекте</a> <!-- Каждый пункт ссылается на нужный подзаголовок -->
+                <li><a class="nav-btn home" href="/index.html"><img src="/images/bages/home.svg" width="50" height="50"><span>Главная</span></a>
                 </li>
-                <li><a href="#Title2">О реках</a>
+                <li><a class="nav-btn sign-in" href="/sign-in-pane.html"><img src="/images/bages/registration.svg" width="50" height="50"><span>Вход</span></a>
                 </li>
-                <li><a href="#Title3">Галерея</a>
+                <li><a class="nav-btn wishlist-btn" href="/cart.html"><img src="/images/bages/star.svg" width="50" height="50"><span>Список желаний</span></a>
                 </li>
-                <li><a href="#">Определения</a>
+                <li><a class="nav-btn termins" href="/termins.html"><img src="/images/bages/book.svg" width="50" height="50"><span>Определения</span></a>
                 </li>
-                <li><a href="#contacts">Контактная информация</a>
+                <li><a class="nav-btn contacts" href="#contacts"><img src="/images/bages/info.svg" width="50" height="50"><span>Контакты</span></a>
                 </li>
-                <!-- <li><a href="sign-in-pane.html">Войти</a>
-                </li> -->
             </ul>
         </nav>
-        <a class="sign-in-btn" href="sign-in-pane.html"><img src="images/bages/registration.png" width="50" height="50"></a>
-        <a class="wishlist-btn" href="cart.html"><img src="images/bages/star.png" width="50" height="50"></a>
         <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
     </header>
     
@@ -201,7 +196,7 @@
                             </p>
                             <a class="clickable" href="#"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Volga">
@@ -213,7 +208,7 @@
                             </p>
                             <a class="clickable" href="/river-web-pages/volga-river.html"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="HuangHe">
@@ -226,7 +221,7 @@
                             </p>
                             <a class="clickable" href="#"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Amazonka">
@@ -234,7 +229,7 @@
                             <figcaption>Амазонка (Бразилия)</figcaption>
                             <a class="clickable" href="#"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Missisipi">
@@ -242,7 +237,7 @@
                             <figcaption>Миссисипи (США)</figcaption>
                             <a class="clickable" href="#"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Nil">
@@ -250,7 +245,7 @@
                             <figcaption>Нил (Египет)</figcaption>
                             <a class="clickable" href="#"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Ind">
@@ -258,7 +253,7 @@
                             <figcaption>Инд (Индия)</figcaption>
                             <a class="clickable" href="#"></a>
                             <button class="like-btn" onclick="accumulate(this)">
-                                <img src="images/bages/heart.png" width="20" height="20">
+                                <img src="images/bages/heart.svg" width="20" height="20">
                             </button>
                         </figure>
                     </article>

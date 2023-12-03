@@ -1,8 +1,6 @@
 @media (max-width: 800px) {
     body {
         font-size: larger;
-
-        
     }
 
     #index-pane {
@@ -90,6 +88,10 @@
 
     aside {
         padding-top: 0;
+
+        > section {
+            margin-left: 10px;
+        }
     }
 
     #river-interface {
@@ -99,6 +101,14 @@
             > #river-info {
                 width: auto;
             }
+        }
+    }
+
+    #wishlist-main-block {
+        flex-flow: column;       
+        
+        > .configs {
+            width: auto;
         }
     }
 }
@@ -156,8 +166,21 @@
         > #logo {
             min-width: 0;
             > h1 {
-                display: none;
+                /* display: none; */
             }
+        }
+    }
+
+    #terms-block figure {
+        float: none;
+        /* display: flex;
+        flex-flow: column nowrap;
+        align-items: center; */
+        width: fit-content;
+        margin: 0 auto;
+
+        > img {
+            margin: 0 auto;
         }
     }
 }

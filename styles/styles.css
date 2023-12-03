@@ -119,12 +119,34 @@ header {
                 transition: background-color .5s;
     
                 > a {
-                    display: block;
+                    display: flex;
+                    align-items: center;
                     text-decoration: none;
+                    gap: 5px;
+                    position: relative;
                     
                     /* padding-top: 22px;
                     padding-bottom: 22px; */
                     color: antiquewhite;
+
+                    > img {
+                        filter: invert(1);
+                        color: white;
+                        width: 25px; height: 25px;
+                    }
+                }
+                > .wishlist-btn::after {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    top: -8px;
+                    left: 16px;
+                    content: attr(count);
+                    text-align: center;
+                    font-size: 10pt;
+                    color: white;
+                    background-color: red;
                 }
             }
     
@@ -138,42 +160,53 @@ header {
         }
     }
 
-    > .sign-in-btn, > .wishlist-btn {
-        display: block;
-        position: relative;
+    > .nav-buttons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-right: 5px;
+
+        > .nav-btn {
+            /* display: block; */
+            position: relative;
+            transition: all .3s;
         
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 10px;
-        margin-left: auto;
-    
-        > img {
-            filter: invert();
-            user-select: none;
+            > img {
+                filter: invert();
+                user-select: none;
+            }
         }
-    }
-    > .sign-in-btn > img {
-        width: 40px; height: 40px;
-    }
-    > .wishlist-btn > img {
-        width: 30px; height: 30px;
-    }
+        > .sign-in-btn > img {
+            width: 40px; height: 40px;
+        }
+        > .wishlist-btn  {
+            margin-top: 5px;
+            > img {
+                width: 30px; height: 30px;
+            }
+        }
+        > .to-home-btn > img {
+            width: 35px; height: 35px;
+        }
 
-    > .sign-in-btn:hover, > .wishlist-btn:hover {
-        filter: brightness(0.9);
-    }
-
-    > .wishlist-btn::after {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        top: -7px;
-        right: -7px;
-        content: attr(count);
-        text-align: center;
-        color: white;
-        background-color: red;
+        > .nav-btn:hover {
+            filter: brightness(0.9);
+        }
+    
+        > .wishlist-btn::after {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            top: -7px;
+            right: -7px;
+            content: attr(count);
+            text-align: center;
+            color: white;
+            background-color: red;
+        }
     }
 }
 
@@ -181,8 +214,11 @@ header {
     display: none;
     max-width: 0;
     position: relative;
+    width: 45px;
+    border-radius: 10px;
+    transition: background-color .5s;
 
-    width: 40px;
+    /* transition: ; */
 
     /* Кнопка */
     > input:hover ~ span {
@@ -204,7 +240,7 @@ header {
         position: absolute;
         top: 31px;
         left: 8px;
-        right: 3px;
+        right: 8px;
         height: 3px;
         background: white;
     
@@ -230,6 +266,9 @@ header {
      > span:after {
         bottom: -10px;
      }
+}
+.nav-toggle:hover {
+    background-color: #00a2ff;
 }
 
 /* Основа */

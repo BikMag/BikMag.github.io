@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реки мира</title>
-    <link rel="favicon" href="/favicon.ico" sizes="any"> <!-- Создание иконки -->
+    <link rel="icon" href="favicon.ico"> <!-- Создание иконки -->
     <!-- <link rel="icon" type="images/png" href="/logo.png"> -->
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/river-styles.css">
@@ -19,32 +19,26 @@
 
     <!-- Шапка -->
     <header>
-        <a id="logo" href="../index.html">
-            <img src="../images/logos/river_logo.png" width="50" height="50">
+        <a id="logo" href="/index.html">
+            <img src="/images/logos/river_logo.png" width="50" height="50">
             <h1>Реки мира</h1>
         </a>
 
         <!-- Создание оглавления на основе списков -->
         <nav id="menu">
             <ul>
-                <li><a href="../index.html">На главную</a> <!-- Каждый пункт ссылается на нужный подзаголовок -->
+                <li><a class="nav-btn home" href="/index.html"><img src="/images/bages/home.svg" width="50" height="50"><span>Главная</span></a>
                 </li>
-                <li><a href="#Title2">Содержание</a>
+                <li><a class="nav-btn sign-in" href="/sign-in-pane.html"><img src="/images/bages/registration.svg" width="50" height="50"><span>Вход</span></a>
                 </li>
-                <li><a href="#Title3">История</a>
+                <li><a class="nav-btn wishlist-btn" href="/cart.html"><img src="/images/bages/star.svg" width="50" height="50"><span>Список желаний</span></a>
                 </li>
-                <li><a href="#">Акватория</a>
+                <li><a class="nav-btn termins" href="/termins.html"><img src="/images/bages/book.svg" width="50" height="50"><span>Определения</span></a>
                 </li>
-                <li><a href="#">Туризм</a>
+                <li><a class="nav-btn contacts" href="#contacts"><img src="/images/bages/info.svg" width="50" height="50"><span>Контакты</span></a>
                 </li>
-                <li><a href="#">Галерея</a>
-                </li>
-                <!-- <li><a href="sign-in-pane.html">Войти</a>
-                </li> -->
             </ul>
         </nav>
-        <a class="sign-in-btn" href="../sign-in-pane.html"><img src="../images/bages/registration.png" width="50" height="50"></a>
-        <a class="wishlist-btn" href="../cart.html"><img src="../images/bages/star.png" width="50" height="50"></a>
         <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
     </header>
 

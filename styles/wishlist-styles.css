@@ -1,17 +1,21 @@
 /* Список желаний */
 #wishlist-main-block {
-    flex-flow: column;
+    flex-flow: row-reverse;
     grid-column: 1 / -1;
-
+    
     & .points {
         margin: 0;
     }
 
     > .configs {
         position: sticky;
+        width: 200px;
+        height: fit-content;
     }
     
     > .wishlist {
+        flex-grow: 1;
+
         > .item {
             position: relative;
             box-shadow: 2px 2px 5px black;

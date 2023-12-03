@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реки мира</title>
+    <link rel="icon" href="favicon.ico"> <!-- Создание иконки -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/terms-styles.css">
+    <link rel="stylesheet" href="styles/mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
+    <!-- Добавить библиотеку иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script defer src="scripts/main_page.js"></script>
+    <script defer src="scripts/move_burger_menu.js"></script>
+
+    <!-- Шапка -->
+    <header>
+        <a id="logo" href="index.html">
+            <img src="/images/logos/river_logo.png" width="50" height="50">
+            <h1>Реки мира</h1>
+        </a>
+
+        <!-- Создание оглавления на основе списков -->
+        <nav id="menu">
+            <ul>
+                <li><a class="nav-btn home" href="/index.html"><img src="/images/bages/home.svg" width="50" height="50"><span>Главная</span></a>
+                </li>
+                <li><a class="nav-btn sign-in" href="/sign-in-pane.html"><img src="/images/bages/registration.svg" width="50" height="50"><span>Вход</span></a>
+                </li>
+                <li><a class="nav-btn wishlist-btn" href="/cart.html"><img src="/images/bages/star.svg" width="50" height="50"><span>Список желаний</span></a>
+                </li>
+                <li><a class="nav-btn termins" href="/termins.html"><img src="/images/bages/book.svg" width="50" height="50"><span>Определения</span></a>
+                </li>
+                <li><a class="nav-btn contacts" href="#contacts"><img src="/images/bages/info.svg" width="50" height="50"><span>Контакты</span></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
+    </header>
+
+    <!-- Основная часть страницы -->
+    <div id="index-pane">
+        <main id="terms-block">
+            <div class="content">
+                <section>
+                    <h2 id="Title1" class="anchor">Определения</h2>
+                    
+                    <p>
+                        Здесь приведена терминология, касаемая рек, с наглядным представлением, чтобы лучше ориентирваться в информации на сайте.
+                    </p>
+
+                    <article>
+                        <h3 id="main-terms">Основные определения:</h3>
+                        <figure>
+                            <img src="/images/terms-images/main-terms.jpeg" width="200px">
+                            <figcaption>Река и ее части</figcaption>
+                        </figure>
+                        <dl>
+                            <dt><b>Река - </b></dt>
+                            <dd>Поток воды, имеющий лентообразную форму.</dd>
+                            <dd>Разновидность водоёма.</dd>
+    
+                            <dt><b>Исток реки - </b></dt>
+                            <dd>Участок, где река берёт своё начало.</dd>
+    
+                            <dt><b>Устье реки - </b></dt>
+                            <dd>Та часть реки, где она заканчивается и впадает в другую реку, озеро, море.</dd>
+                            <dd>Конец реки.</dd>
+
+                            <dt><b>Правый берег реки - </b></dt>
+                            <dd>Участок суши, расположенный справа от реки по течению.</dd>
+
+                            <dt><b>Левый берег реки - </b></dt>
+                            <dd>Участок суши, расположенный слева от реки по течению.</dd>
+
+                            <dt><b>Приток - </b></dt>
+                            <dd>Место, где река впадает в другую реку. Правый и левый притоки располагаются аналогично речным берегам.</dd>
+                        </dl>
+                    </article>
+                    <article id="block-acuatory">
+                        <h3 id="acuatory">Акватория:</h3>
+                        <figure>
+                            <img src="/images/terms-images/river-zone.jpg" width="200px">
+                            <figcaption>Бассейн реки</figcaption>
+                        </figure>
+                        <dl class="first-dl">
+                            <dt><b>Бассейн реки - </b></dt>
+                            <dd>Площадь земной поверхности, по которой протекает главная река со всеми её притоками.</dd>
+    
+                            <dt><b>Водораздел - </b></dt>
+                            <dd>Линия, ограничивающая бассейн реки.</dd>
+
+                            <dt><b>Дельта - </b></dt>
+                            <dd>Устье рек с большим количеством островов и протоков между ними.</dd>
+                        </dl>
+                        <figure>
+                            <img src="/images/terms-images/oka-valley.jpg" width="200px">
+                            <figcaption>В.Д. Паленов "Долина Оки"</figcaption>
+                        </figure>
+                        <dl>
+                            <dt><b>Долина реки - </b></dt>
+                            <dd>Пониженная часть поверхности между горами или холмами, по которой протекает река. В качестве примера см. картину В.Д. Паленова «Долина Оки»</dd>
+                        </dl>
+
+                        <dl>
+                            <dt><b>Пойма — </b></dt>
+                            <dd>Низкие речные берега, заливаемые весенней водой и вследствие этого зарастающие травой. Пойма реки – это богатые заливные луга.</dd>
+                        </dl>
+                    </article>
+                </section>
+            </div>
+
+            <div id="notification" onclick="clicked()">
+                <a id="notification_menu_sym"></a>
+                <span class="title">Уведомления</span>
+                <ol class="block-wrap">
+                    <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
+                    <li><a>Какие места стоит посетить</a></li>
+                    <li><a>Открылся новый туристический маршрут!</a></li>
+                    <li><a>Часто задаваемые вопросы</a></li>
+                </ol>
+            </div>
+        </main>
+
+        <aside>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="images/logos/river_logo.png" width="50" height="50">
+            </section>
+        </aside>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="shell">
+                <span class="about">
+                    <h2 class="title">О нашем сайте</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                       sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
+                       suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                       Quis aute iure reprehenderit in voluptate velit esse cillum dolore
+                       eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                       sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div id="social_media">
+                        <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>
+                        <div class="soc_button telegram"><a class="fa fa-telegram" href="https://telegram.org" target="_blank"></a></div>
+                        <div class="soc_button vk"><a class="fa fa-vk" href="https://vk.com" target="_blank"></a></div>
+                    </div>
+                </span>
+                
+                <span class="links">
+                    <h2 class="title">Ссылки</h2>
+                    <ul>
+                        <li><a href="#">О проекте</a>
+                        </li>
+                        <li><a href="#">FAQ</a>
+                        </li>
+                        <li><a href="#">Помощь</a>
+                        </li>
+                        <li><a href="#">Отправить форму</a>
+                        </li>
+                        <li><a href="#contacts" onclick="showNotification('Hello')">Контакты</a>
+                        </li>
+                    </ul>
+                </span>
+                
+                <span id="contacts">
+                    <h2 class="title">Контакты</h2>
+                    <!-- <address>
+                        <a id="email" href="mailto:somepeople@mail.ru">example@mail.ru</a><br>
+                        <a href="tel:+7 800 555-35-35">+7 800 555-35-35</a>
+                        <p>Ссылка на наш <a href="https://www.yandex.ru/">паблик</a></p>
+                    </address> -->
+                    <address>
+                        <div class="icon-block">
+                            <i class="fa fa-map-marker ico-contact"></i>
+                            <p class="description"> 128000, г. Москва, пр-кт Вернадского,
+                                дом 78, Кабинет А-108</p>
+                        </div>
+                    
+                        <div class="icon-block">
+                            <i class="fa fa-envelope ico-contact"></i>
+                            <a class="description" id="email" href="mailto:example@mail.ru">example@mail.ru</a>
+                        </div>
+    
+                        <div class="icon-block">
+                            <i class="fa fa-phone ico-contact"></i>
+                            <div class="tel-numbers">
+                                <a class="description" href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
+                                <a class="description" href="tel:+7 (900) 012-34-56">+7 (900) 012-34-56</a>
+                            </div>
+                        </div>
+                    </address>
+                </span>
+            </div>
+            
+            <span id="rights"><i>© Собственность студента, 2023 год</i></span>       <!-- Сноска -->
+        </footer>
+    </div>
+</body>
+</html>

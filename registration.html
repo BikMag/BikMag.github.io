@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <link rel="icon" href="favicon.ico"> <!-- Создание иконки -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/reg&sign-in.css">
     <link rel="stylesheet" href="styles/mobstyles.css" media="(max-width: 1000px), (orientation: portrait)">
@@ -11,13 +12,31 @@
 
 <body>
     <script defer src="scripts/registration-script.js"></script>
+    <script defer src="scripts/move_burger_menu.js"></script>
     <!-- <script defer src="scripts/capcha.js"></script> -->
 
     <header>
         <a id="logo" href="index.html">
-            <img src="images/logos/river_logo.png" width="50" height="50">
+            <img src="/images/logos/river_logo.png" width="50" height="50">
             <h1>Реки мира</h1>
         </a>
+
+        <!-- Создание оглавления на основе списков -->
+        <nav id="menu">
+            <ul>
+                <li><a class="nav-btn home" href="/index.html"><img src="/images/bages/home.svg" width="50" height="50"><span>Главная</span></a>
+                </li>
+                <li><a class="nav-btn sign-in" href="/sign-in-pane.html"><img src="/images/bages/registration.svg" width="50" height="50"><span>Вход</span></a>
+                </li>
+                <li><a class="nav-btn wishlist-btn" href="/cart.html"><img src="/images/bages/star.svg" width="50" height="50"><span>Список желаний</span></a>
+                </li>
+                <li><a class="nav-btn termins" href="/termins.html"><img src="/images/bages/book.svg" width="50" height="50"><span>Определения</span></a>
+                </li>
+                <li><a class="nav-btn contacts" href="/index.html#contacts"><img src="/images/bages/info.svg" width="50" height="50"><span>Контакты</span></a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-toggle"><input type="checkbox"/><span></span></nav>
     </header>
 
     <main id="reg-block">

@@ -1,0 +1,44 @@
+#terms-block {
+    --gradientBG: linear-gradient(135deg, #0067fe 0%, #00c9ff 80%);
+
+    & h3 {
+        color: black;
+        background: var(--gradientBG);
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    & dt {
+        width: fit-content;
+        background-color: #00f09e;
+        margin-inline: 5px;
+    }
+
+    & figure {
+        margin: 0;
+        position: relative;
+        float: right;
+        background: var(--gradientBG);
+
+        > figcaption {
+            text-align: center;
+            font-size: 12pt;
+        }
+    }
+
+    & #block-acuatory {
+        min-height: 300px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        > .first-dl {
+            min-height: 250px;
+        }
+    }
+
+    & article {
+        padding: 0;
+        background-color: #e1ffff;
+        box-shadow: 2px 2px 5px black;
+    }
+}
