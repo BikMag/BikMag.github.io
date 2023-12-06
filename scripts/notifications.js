@@ -2,21 +2,13 @@
 
 let item = document.querySelector("#notification");
 
-item.onmouseover = function() {
-    // messageDecorator(sendMessage);
-    // console.log('hovered');
-}
-item.onmouseout = function() {
-    // console.log('unhovered');
-}
-
 let notificationBlock = document.querySelector('#notification_menu_sym');
 let messageCounter = document.querySelectorAll(".block-wrap > li").length;
 notificationBlock.setAttribute("countOfMessages", messageCounter);
 
 function sendMessage() {
     let blockWrap = document.querySelector('.block-wrap');
-    blockWrap.innerHTML += "<li><a>Новое сообщение</a></li>";
+    blockWrap.innerHTML += '<li><a>Новое сообщение</a><span class="close-btn">x</span></li>';
     messageCounter++;
     if (messageCounter < 10) {
         notificationBlock.setAttribute("countOfMessages", messageCounter);
@@ -26,7 +18,7 @@ function sendMessage() {
     }
 }
 
-let timer = setInterval(sendMessage, 3000);
+// let timer = setInterval(sendMessage, 3000);
 let timeout;
 // Декоратор
 function messageDecorator(func) {
@@ -43,22 +35,6 @@ function clicked() {
     messageDecorator(sendMessage);
 }
 
-// Создатель списка
-function createList() {
-    let listObj = document.querySelector(".list-maker");
-    let element;
-
-    let text = prompt("Введите текст:");
-    if (text !== null) {
-        if (text != "") {
-            element = document.createElement('li');
-            element.textContent = text;
-            listObj.append(element);
-        }
-        setTimeout(() => {createList()}, 100);
-    }
-}
-
 // Временное уведомление
 function showNotification(options) {
     let element = document.createElement('div');
@@ -67,3 +43,13 @@ function showNotification(options) {
     document.body.append(element);
     setTimeout(() => document.body.removeChild(element), 3000);
 }
+
+// Закрытие сообщения
+item.onclick = event => {
+    if (event.target.className != "close-btn")
+        return;
+    
+    console.log(event.target.parentNode);
+    notificationBlock.setAttribute("countOfMessages", --messageCounter);
+    event.target.parentNode.remove();
+};

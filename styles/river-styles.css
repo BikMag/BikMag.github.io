@@ -1,8 +1,7 @@
 #river-interface {
     > main {
         justify-content: space-between;
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
+        flex-flow: row-reverse  nowrap;
 
         > #river-info {
             width: 300px;
@@ -31,6 +30,7 @@
                 font-size: 14pt;
                 background: var(--gradientBG);
                 text-align: center;
+                font-family: 'Lobster';
             }
 
             > .picture {
@@ -40,11 +40,53 @@
                 }
                 
             }
+
+            > table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 2px solid #0067fe;
+
+                > thead {
+                    color: white;
+                    background-color: #0044ff;
+
+                    & th {
+                        border: none;
+                    }
+                }
+
+                > tbody td {
+                    border: none;
+                    border-left: 1px solid white;
+                    hyphens: auto;
+                }
+
+                > tbody td:nth-child(1) {
+                    text-align: center;
+                    font-weight: 700;
+                }
+                > tbody td:nth-child(2) {
+                    text-align: center;
+                }
+
+                > tbody tr:nth-child(odd) {
+                    background-color: #d7eaff;
+                }
+                  
+                > tbody tr:nth-child(even) {
+                    background-color: #eff5ff;
+                }
+            }
         }
 
         > #river-content {
-            /* background-color: bisque; */
+            /* width: 0; Здесь что-то странное */
+            width: min-content;
             flex-grow: 1;
+
+            > .galery {
+
+            }
         }
     }
 }

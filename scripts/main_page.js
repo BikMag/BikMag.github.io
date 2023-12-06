@@ -113,26 +113,35 @@ function minusCount(_this) {
 }
 
 function deleteItem(_this) {
-    let riverID = _this.parentNode['id'];
-    acc.deleteFromArray(riverID);
-    createWishList();
+    let confirmDel = confirm("Вы действительно хотите удалить данный объект?");
+    
+    if (confirmDel) {
+        let riverID = _this.parentNode['id'];
+        acc.deleteFromArray(riverID);
+        createWishList();
+        alert("Объект удален");
+    }
 }
 
 // create cart (wishlist)
 const createWishList = function(wishlist = acc.wishlist) {
     console.log(wishlist);
-    let containers = '<h2>Понравившиеся реки</h2>';
+    let containers = '<h2>Понравившиеся реки</h2><p>Здесь находятся реки, которые вам показались интересными. Вы можете также их оценить!</p>';
     if (wishlist.length == 0) {
-        containers += '<i>Тут ничего нет</i>';
+        containers += `<div class="empty-block">
+                        <img src="/images/bages/picture.svg" width=300>
+                        <i>Ой, тут ничего нет, но вы можете выбрать понравившуюся реку на главной странице!</i>
+                        </div>`;
     } else {
         for (let item of wishlist) {
             const container = `
             <article id="${item.id}" class="item template">
                 <h1>Река ${item.name} (${item.country})</h1>
-                <img src="${item.picture}" width="200">
+                <div class="image-frame"><img src="${item.picture}" width="200"></div>
                 <div class="controller">
+                    <p>Оценка:</p>
                     <button class="minus-btn" onclick="minusCount(this)">-</button>
-                    <input class="count-input" type="number" value="${item.count}" readonly>
+                    <input class="count-input" value="${item.count}" readonly>
                     <button class="plus-btn" onclick="plusCount(this)">+</button>
                 </div>
                 <button class="del-btn" onclick="deleteItem(this)"><img src="images/bages/trash.png"></button>
@@ -237,7 +246,7 @@ function sumPoints() {
 }
 
 document.onclick = event => {
-    // console.log(event.target.classList);
+    console.log(event.pageX + ' ' + event.pageY);
     if (document.querySelector(".wishlist") !== null)
         sumPoints();
 }

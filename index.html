@@ -14,7 +14,8 @@
     <!-- <script src="scripts/button.js"></script> -->
     <script defer src="scripts/main_page.js"></script>
     <script defer src="scripts/move_burger_menu.js"></script>
-    <!-- <script defer src="scripts/notifications.js"></script> -->
+    <script defer src="scripts/notifications.js"></script>
+    <script defer src="/scripts/window-scroll.js"></script>
 
     <!-- Шапка -->
     <header>
@@ -51,7 +52,7 @@
                     <article>
                         <h3 id="Subtitle1.1">Что это</h3>
                         <p><i>"Реки мира"</i> - это проект об <strong>интересных</strong> фактах речной акватории Земли.
-                            <br>Здесь можно узнать о реках-рекордсменах со всей планеты.</p>
+                            <br>Здесь можно узнать о реках-рекордсменах со всей планеты и не только.</p>
                     </article>
                 
                     <article>
@@ -61,7 +62,7 @@
     
                     <article>
                         <h3 id="Subtitle1.3">Перспективы</h3>
-                        <p>В будущем <em>проект</em> может перерасти в полноценный туристический портал или энциклопедию.</p>
+                        <p>В будущем <em>проект</em> может перерасти в полноценный туристический портал или <u>энциклопедию</u>.</p>
                     </article>
                 </section>
                 
@@ -70,39 +71,29 @@
                     <!-- Циатата -->
                     <blockquote><i>"Все реки являются матерями моря."</i></blockquote>
     
-                    <article>
+                    <article id="about-rivers">
                         <h3 id="Subtitle2.1">Роль рек в нашей жизни</h3>
                         
                         <!-- Фото-ссылка на другой сайт (обёрнут тегом figure для открытия страницы в новой вкладке) -->
                         <figure id="kolyma">
                             <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8B%D0%BC%D0%B0" target="_blank">
-                                <img src="images/river.jpg" width="400" height="240">
+                                <img src="images/river.jpg" width="400">
                             </a>
                             <figcaption>Река Колыма</figcaption>
                         </figure>
     
-                        <p>Реки - это источник <u>воды</u> (H<sub>2</sub>O) и <u>пищи</u>.
-                            Практически все поселения строились вблизи рек<sup>уточнить</sup>.
-                            <br>
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text 
-                            Text Text Text Text Text Text Text Text Text Text Text Text
-                            <br> 
+                        <p>
+                            Реки - это источник <u>пресной воды</u> (H<sub>2</sub>O).
+                            Несмотря на то, что реки составляют малую часть гидросферы, они играют важную роль в 
+                            природе и нашей жизни. Собирая воду с ландшафта, они обогащают ее влагой. Они формируют
+                            уникальную флору и фауну, являются домом для множества видов растений и животных. Без рек 
+                            все эти виды не смогли бы существовать.
+                            <br><br> 
+                            Для человека реки также имеют огромное значение. Стоит хотя бы вспомнить,
+                            что многие места обитания человека находились и находятся вблизи рек. Люди получают
+                            воду для питья. Реки позволяют заниматься земледелием и обеспечивают нас пропитанием.
+                            Их используют для транспортировки грузов, а также для выработки электроэнергии.
+                            <br><br>
                             Реки вдохновляли поэтов на написание стихотворений. Так, Тютчев Ф.И. писал о реке:
                         </p>
                         <pre>
@@ -121,51 +112,21 @@
     Течь и искриться <b>река</b>
     И поля дышать на зное.
                         </pre>
+                        <p>
+                            В наше время реки стали местом рекреации и туризма. Многие люди любят проводить
+                            время на берегу реки, наслаждаясь красотой природы, рыбалкой или плаванием.
+                            Это способствует укреплению физического и психического здоровья людей и является
+                            источником отдыха и развлечений.
+                            <br><br>
+                        </p>
                     </article>
     
                     <!-- Список описаний -->
                     <article>
-                        <h3 id="Subtitle2.2">Определения:</h3>
-                        <dl>
-                            <dt><b>Река</b></dt>
-                            <dd>Поток воды, имеющий лентообразную форму.</dd>
-                            <dd>Разновидность водоёма.</dd>
-    
-                            <dt><b>Исток реки</b></dt>
-                            <dd>Участок, где река берёт своё начало.</dd>
-    
-                            <dt><b>Устье реки</b></dt>
-                            <dd>Та часть реки, где она заканчивается и впадает в другую реку, озеро, море.</dd>
-                            <dd>Конец реки.</dd>
-    
-                            <dt><b>Бассейн реки</b></dt>
-                            <dd>Площадь земной поверхности, по которой протекает главная река со всеми её притоками.</dd>
-    
-                            <dt><b>Водораздел</b></dt>
-                            <dd>Линия, ограничивающая бассейн реки.</dd>
-                        </dl>
-    
-                        <!-- Каркас для карты изображения (при нажатии на одну из фигур страница перематывается наверх) -->
-                        <figure id="map"> <!-- Само фото, в которую встраивается карта -->
-                            <!--img src="images/map.png" width="400" height="300" usemap="#map0"-->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14376.983751001073!2d37.4710501580796!3d55.67399529931266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695712666840!5m2!1sru!2sru"
-                                    width="540"
-                                    height="320"
-                                    style="border:0;"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                            <figcaption>Карта</figcaption>
-                        </figure>
-                        <figure class="yandex-map">
-                            <script class="abcd"
-                                type="text/javascript"
-                                charset="utf-8"
-                                async
-                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d7da4c5887382b09bae7917ad505f07c63efa99ff053285abc4f196944c023e&amp;width=100%25&amp;height=295&amp;lang=ru_RU&amp;scroll=true"></script>
-                            </script>
-                        </figure>
+                        <h3>Видеоматериалы</h3>
+                        <p>
+                            Посмотрите эти видео и насладитесь красотой рек:
+                        </p>
                         
                         <figure class="videos">
                             <iframe width="540"
@@ -176,7 +137,6 @@
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen>
                             </iframe>
-                            <figcaption>Видео</figcaption>
                             <div id="my_video">
                                 <video src="videos/reka-don.mp4" class="content" autoplay="" muted="" loop=""></video>
                             </div>
@@ -186,17 +146,23 @@
     
                 <section id="galery">
                     <h2 id="Title3" class="anchor">Посетите реки!</h2>
+                    <p>
+                        В мире существует множество рек. Вы можете взглянуть на самые-самые реки в нашей галерее и выбрать понравившиеся:
+                    </p>
                     <article class="pictures">
                         <figure id="Don">
-                            <img src="images/Don_.jpg" width="400" height="300" onclick="docLocation('#')">
+                            <img src="images/Don_.jpg" width="400" height="300">
                             <figcaption>Дон (Россия)</figcaption>
                             <p>Живописная река, протекающая в Центральной и Южной России.
                                 Начинается в г. Новомосковск, Тульская обл., и впадает
                                 в азовское море у г. Ростов-на-Дону.
                             </p>
-                            <a class="clickable" href="#"></a>
+                            <!-- <a class="clickable" href="#"></a> -->
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='#'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Volga">
@@ -206,9 +172,12 @@
                                 Протянулась от Валдаской возвышенности до Каспийского моря. 
                                 Имеет самый большой бассейн в Европе.
                             </p>
-                            <a class="clickable" href="/river-web-pages/volga-river.html"></a>
+                            <!-- <a class="clickable" href="/river-web-pages/volga-river.html"></a> -->
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='/river-web-pages/volga-river.html'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="HuangHe">
@@ -219,47 +188,77 @@
                                 Протекает от Тибета до Желтого моря.
                                 Бассейн реки считается местом формирования китайского этноса.
                             </p>
-                            <a class="clickable" href="#"></a>
+                            <!-- <a class="clickable" href="#"></a> -->
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='#'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Amazonka">
                             <img src="images/Amazonka.jpg" width="400" height="300">
                             <figcaption>Амазонка (Бразилия)</figcaption>
-                            <a class="clickable" href="#"></a>
+                            <p>
+                                Самая длинная река на Земле. Протекает по Южной Америке.
+                                В бассейне Амазонки распологается самый крупнейший в мире тропический лес
+                                с множеством видов растений и животных.
+                            </p>
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='#'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Missisipi">
                             <img src="images/Missisipi.jpg" width="400" height="300">
                             <figcaption>Миссисипи (США)</figcaption>
-                            <a class="clickable" href="#"></a>
+                            <p>
+                                Главная водная артерия Северной Америки. Протекает через
+                                Аппалачи и Скалистые горы и заканчивается в Мексиканском заливе.
+                                Издревле здесь жили индейцы.
+                            </p>
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='#'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Nil">
                             <img src="images/Nil.jpg" width="400" height="300">
                             <figcaption>Нил (Египет)</figcaption>
-                            <a class="clickable" href="#"></a>
+                            <p>
+                                Река Нил входит в топ крупнейших рек мира. Протекает через пустыню
+                                от оз. Виктория до Средиземного моря. Место зарождения древнеегипетской
+                                цивилизации.
+                            </p>
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='#'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                         <figure id="Ind">
                             <img src="images/Ind.jpg" width="400" height="300">
                             <figcaption>Инд (Индия)</figcaption>
-                            <a class="clickable" href="#"></a>
+                            <p>
+                                Крупная река в Южной Азии, протекающая от Тибетских гор до Аравийского моря.
+                                Инд - одна из главных рек ведийского семиречья.
+                            </p>
                             <button class="like-btn" onclick="accumulate(this)">
                                 <img src="images/bages/heart.svg" width="20" height="20">
+                            </button>
+                            <button class="more-btn" onclick="document.location='#'">
+                                <img src="images/bages/right_arrow.png" width="20" height="20">
                             </button>
                         </figure>
                     </article>
                 </section>
     
-                <section class="wrapper">
+                <!-- <section class="wrapper">
                     <div class="box">
                       <span></span>
                       <div class="content">
@@ -284,9 +283,9 @@
                         <a href="#">Подробнее</a>
                       </div>
                     </div>
-                </section>
+                </section> -->
     
-                <section class="cards-2">
+                <!-- <section class="cards-2">
                     <div class="card">
                         <h2>01</h2>
                         <p>There could be some informations regarding stuff contained on your web page.</p>
@@ -302,55 +301,44 @@
                         <p>With a button redirecting customers to a page with details about a chosen plan.</p>
                         <a href="#">Подробнее</a>
                     </div>
-                </section>
+                </section> -->
     
                 <section class="cards-3">
                     <div class="card">
                         <div class="content">
                             <h2>01</h2>
-                            <h3>Заголовок 1</h3>
-                            <p>There could be some informations regarding stuff contained on your web page.</p>
-                            <a href="#">Подробнее</a>
+                            <h3>Определения</h3>
+                            <p>Хотите знать больше о реках? Посмотрите определения на нашем сайте!</p>
+                            <a href="/termins.html">Подробнее</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="content">
                             <h2>02</h2>
-                            <h3>Заголовок 2</h3>
-                            <p>Or they could be used to showcase different payment plans for your services.</p>
-                            <a href="#">Подробнее</a>
+                            <h3>Список желаний</h3>
+                            <p>Вы можете добавить понравившуюся реку в список желаний. Просто нажмите 'лайк' на кратинке.</p>
+                            <a href="/cart.html">Подробнее</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="content">
                             <h2>03</h2>
-                            <h3>Заголовок 3</h3>
-                            <p>With a button redirecting customers to a page with details about a chosen plan.</p>
-                            <a href="#">Подробнее</a>
+                            <h3>Регистрация</h3>
+                            <p>Чтобы ваши данные не терялись, пройдите регистрацию или вход, есил вы тут впервые.</p>
+                            <a href="/sign-in-pane.html">Подробнее</a>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <h2>Создать список</h2>
-                    <article>
-                        <ul class="list-maker">
-                            <li>hello</li>
-                            <li>hello</li>
-                            <li>hello</li>
-                        </ul>
-                    </article>
-                    <button onclick="createList()">Добавить</button>
-                </section>
             </div>
     
-            <div id="notification" onclick="clicked()">
+            <div id="notification">
                 <a id="notification_menu_sym"></a>
                 <span class="title">Уведомления</span>
                 <ol class="block-wrap">
-                    <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
-                    <li><a>Какие места стоит посетить</a></li>
-                    <li><a>Открылся новый туристический маршрут!</a></li>
-                    <li><a>Часто задаваемые вопросы</a></li>
+                    <li><a>Вы можете зарегестрироваться на нашем сайте</a><span class="close-btn">x</span></li>
+                    <li><a>Какие места стоит посетить</a><span class="close-btn">x</span></li>
+                    <li><a>Открылся новый туристический маршрут!</a><span class="close-btn">x</span></li>
+                    <li><a>Часто задаваемые вопросы</a><span class="close-btn">x</span></li>
                 </ol>
             </div>
         </main>
@@ -358,7 +346,15 @@
         <aside>
             <section>
                 <p><i>Здесь могла бы быть ваша реклама</i></p>
-                <img src="images/logos/river_logo.png" width="50" height="50">
+                <img src="/images/bages/picture.svg" width="100" height="100">
+            </section>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="/images/bages/picture.svg" width="100" height="100">
+            </section>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="/images/bages/picture.svg" width="100" height="100">
             </section>
         </aside>
     
@@ -367,13 +363,11 @@
             <div class="shell">
                 <span class="about">
                     <h2 class="title">О нашем сайте</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                       sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                       Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
-                       suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-                       Quis aute iure reprehenderit in voluptate velit esse cillum dolore
-                       eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
-                       sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p>
+                        Интернет-ресурс "Реки мира" - это сайт-энциклопедия о реках со всей нашей планеты, призванный популяризировать 
+                        речной туризм и отдых на природе, а также расширить кругозор. Здесь можно узнать всё самое интересное
+                        о речных системах, их истории, географии, освоении человеком и т.д. Сайт предоставляет широкий набор информации,
+                        а также позволяет выбрать понравившуюся реку.
                     </p>
                     <div id="social_media">
                         <div class="soc_button youtube"><a class="fa fa-youtube-play" href="https://www.youtube.com" target="_blank"></a></div>

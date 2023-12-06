@@ -18,6 +18,7 @@
         margin: 0;
         position: relative;
         float: right;
+        margin-left: 3px;
         background: var(--gradientBG);
 
         > figcaption {

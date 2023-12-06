@@ -15,6 +15,7 @@
 <body>
     <script defer src="scripts/move_burger_menu.js"></script>
     <script defer src="scripts/main_page.js"></script>
+    <script defer src="/scripts/notifications.js"></script>
 
     <header>
         <a id="logo" href="index.html">
@@ -42,31 +43,35 @@
 
     <main id="wishlist-main-block">
         <section class="configs">
-            <span>Всего баллов: <h1 class="points">0</h1></span>
-            <article>
-                <button class="up-sort-btn" onclick="upsort()">Сортировать по возрастанию</button>
-                <button class="down-sort-btn" onclick="downsort()">Сортировать по убыванию</button>
+            <div class="points-title"><span>Всего баллов:</span><h1 class="points">0</h1></div>
+            <article class="sorter">
+                <p>Сортировать: </p>
+                <button class="up-sort-btn" onclick="upsort()">По возрастанию</button>
+                <button class="down-sort-btn" onclick="downsort()">По убыванию</button>
             </article>
             <article class="filter">
                 <p>Фильтровать:</p>
-                <label>
-                    <input type="radio" name="filter" class="filter-mode" checked>
-                    >=
-                </label>
-                <label>
-                    <input type="radio" name="filter" class="filter-mode">
-                    <=
-                </label>
-                <input class="filter-input" type="number" value="0">
+                <div class="input">
+                    <label>
+                        <input type="radio" name="filter" class="filter-mode" checked>
+                        ⩾
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" class="filter-mode">
+                        ⩽
+                    </label>
+                    <input class="filter-input" type="number" value="0" min="0">
+                </div>
                 <button class="filter-btn" onclick="filterItems()">Фильтровать</button>
                 <button class="undo-filter-btn" onclick="createWishList()">Отменить</button>
             </article>
         </section>
         <section class="wishlist">
             <h2>Понравившиеся реки</h2>
+            <p>Здесь находятся реки, которые вам показались интересными. Вы можете также их оценить!</p>
             <article id="Ind" class="item template">
                 <h1>Река Имя (Страна)</h1>
-                <img src="images/river.jpg" width="200">
+                <div class="image-frame"><img src="images/river.jpg" width="200"></div>
                 <div class="controller">
                     <button class="minus-btn" onclick="minusCount(this)">-</button>
                     <input class="count-input" type="number" value="0">
@@ -76,14 +81,14 @@
             </article>
         </section>
         
-        <div id="notification" onclick="clicked()">
+        <div id="notification">
             <a id="notification_menu_sym"></a>
             <span class="title">Уведомления</span>
             <ol class="block-wrap">
-                <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
-                <li><a>Какие места стоит посетить</a></li>
-                <li><a>Открылся новый туристический маршрут!</a></li>
-                <li><a>Часто задаваемые вопросы</a></li>
+                <li><a>Вы можете зарегестрироваться на нашем сайте</a><span class="close-btn">x</span></li>
+                <li><a>Какие места стоит посетить</a><span class="close-btn">x</span></li>
+                <li><a>Открылся новый туристический маршрут!</a><span class="close-btn">x</span></li>
+                <li><a>Часто задаваемые вопросы</a><span class="close-btn">x</span></li>
             </ol>
         </div>
     </main>

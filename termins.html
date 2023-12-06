@@ -13,8 +13,10 @@
 </head>
 
 <body>
-    <script defer src="scripts/main_page.js"></script>
-    <script defer src="scripts/move_burger_menu.js"></script>
+    <script defer src="/scripts/main_page.js"></script>
+    <script defer src="/scripts/move_burger_menu.js"></script>
+    <!-- <script defer src="/scripts/picture-center.js"></script> -->
+    <script defer src="/scripts/notifications.js"></script>
 
     <!-- Шапка -->
     <header>
@@ -113,14 +115,14 @@
                 </section>
             </div>
 
-            <div id="notification" onclick="clicked()">
+            <div id="notification">
                 <a id="notification_menu_sym"></a>
                 <span class="title">Уведомления</span>
                 <ol class="block-wrap">
-                    <li><a>Вы можете зарегестрироваться на нашем сайте</a></li>
-                    <li><a>Какие места стоит посетить</a></li>
-                    <li><a>Открылся новый туристический маршрут!</a></li>
-                    <li><a>Часто задаваемые вопросы</a></li>
+                    <li><a>Вы можете зарегестрироваться на нашем сайте</a><span class="close-btn">x</span></li>
+                    <li><a>Какие места стоит посетить</a><span class="close-btn">x</span></li>
+                    <li><a>Открылся новый туристический маршрут!</a><span class="close-btn">x</span></li>
+                    <li><a>Часто задаваемые вопросы</a><span class="close-btn">x</span></li>
                 </ol>
             </div>
         </main>
@@ -128,7 +130,15 @@
         <aside>
             <section>
                 <p><i>Здесь могла бы быть ваша реклама</i></p>
-                <img src="images/logos/river_logo.png" width="50" height="50">
+                <img src="/images/bages/picture.svg" width="100" height="100">
+            </section>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="/images/bages/picture.svg" width="100" height="100">
+            </section>
+            <section>
+                <p><i>Здесь могла бы быть ваша реклама</i></p>
+                <img src="/images/bages/picture.svg" width="100" height="100">
             </section>
         </aside>
 
