@@ -10,7 +10,7 @@ body {
     /* font-family: 'Times New Roman', Times, serif; */
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size: 14pt;
-
+    background-color: #00c9ff;
     padding-top: 70px;
 }
 body::before {
@@ -18,7 +18,7 @@ body::before {
     position: fixed;
     left: 0; right: 0;
     top: 0; bottom: 0;
-    background: url("/images/bg.avif");
+    /* background: url("/images/bg.avif"); */
     z-index: -1;
 }
 
@@ -692,7 +692,7 @@ blockquote {
     }
 
     .block-wrap {
-        scrollbar-width: auto;
+        /* scrollbar-width: auto; */
         scrollbar-color: #00e997 #007a5b;
     }
 }
