@@ -692,8 +692,8 @@ blockquote {
     }
 
     .block-wrap {
-        scrollbar-width: thin;
-        scrollbar-color: #007a5b #00e997;
+        scrollbar-width: auto;
+        scrollbar-color: #00e997 #007a5b;
     }
 }
 
