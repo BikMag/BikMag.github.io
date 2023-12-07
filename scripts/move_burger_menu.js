@@ -1,5 +1,5 @@
 "use strict"
-// burger menu
+
 const navButton = document.querySelector("input");
 const menu = document.querySelector("#menu");
 

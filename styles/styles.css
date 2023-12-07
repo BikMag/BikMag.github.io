@@ -683,12 +683,17 @@ blockquote {
         width: 12px;               /* ширина scrollbar */
     }
     .block-wrap::-webkit-scrollbar-track {
-        background: rgb(0, 122, 91);        /* цвет дорожки */
+        background: #007a5b;        /* цвет дорожки */
         border-radius: 20px;
     }
     .block-wrap::-webkit-scrollbar-thumb {
         background-color: #00e997; /* цвет плашки */
         border-radius: 20px;       /* закругления плашки */
+    }
+
+    .block-wrap {
+        scrollbar-width: thin;
+        scrollbar-color: #007a5b #00e997;
     }
 }
 

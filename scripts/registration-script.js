@@ -1,13 +1,5 @@
 "use strict"
 
-let text = confirm("Желаете пройти регистрацию на сайте?");
-
-if (text) {
-    alert("Круто!");
-} else {
-    alert("Попробуй ещё раз");
-}
-
 const infoBlock = document.querySelector('.info');
 const capchaBlock = document.querySelector('.capcha-generator-block');
 const inputBlock = document.querySelector('#capcha');

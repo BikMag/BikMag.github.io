@@ -2,6 +2,7 @@
 
 let item = document.querySelector("#notification");
 
+// Определение количества сообщений
 let notificationBlock = document.querySelector('#notification_menu_sym');
 let messageCounter = document.querySelectorAll(".block-wrap > li").length;
 notificationBlock.setAttribute("countOfMessages", messageCounter);
