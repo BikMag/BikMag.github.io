@@ -41,7 +41,7 @@ const database = {
 let count = 0;
 let countField = document.querySelector(".wishlist-btn");
 countField.setAttribute("count", count);
-let acc = new Accumulator(5);
+var acc = new Accumulator(5);
 
 // acumulate storage
 function Accumulator(startingValue) {
@@ -223,16 +223,16 @@ function checkLikedButtons() {
 }
 
 // cut text
-let cards = document.querySelectorAll('.wrapper p');
+// let cards = document.querySelectorAll('.wrapper p');
 
-for (const card of cards) {
-    card.innerHTML = truncate(card.innerHTML, 40);
-}
+// for (const card of cards) {
+//     card.innerHTML = truncate(card.innerHTML, 40);
+// }
 
-function truncate(str, maxlength) {
-    return (str.length > maxlength) ? 
-        str.slice(0, maxlength - 1) + '…' : str;
-}
+// function truncate(str, maxlength) {
+//     return (str.length > maxlength) ? 
+//         str.slice(0, maxlength - 1) + '…' : str;
+// }
 
 // Сумма баллов
 function sumPoints() {
